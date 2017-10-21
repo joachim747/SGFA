@@ -7,7 +7,7 @@ public class CameraControl : MonoBehaviour {
 	public float m_DampTime = 0.2f; //moving speed of camera
 	public float m_ScreenEdgeBuffer = 4f; //characters wont be off screen
 	public float m_MinSize = 6.5f; //max size camera can zoom in
-	/*[HideInInspector]*/ public Transform[] m_Targets;
+	[HideInInspector] public Transform[] m_Targets;
 
 	private Camera m_Camera;
 	private float m_ZoomSpeed;

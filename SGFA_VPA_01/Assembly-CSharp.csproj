@@ -54,6 +54,8 @@
      <Compile Include="Assets\Scripts\Camera\CameraControl.cs" />
      <Compile Include="Assets\Scripts\Characters\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\Characters\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Manager\HeroManager.cs" />
      <Compile Include="Assets\Scripts\UI\UIDirectionControl.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
