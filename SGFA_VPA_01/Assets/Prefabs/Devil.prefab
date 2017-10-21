@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 135661521196352314}
   - component: {fileID: 23241034787314478}
   - component: {fileID: 54332508953073720}
+  - component: {fileID: 114701836847588830}
   m_Layer: 0
   m_Name: Devil
   m_TagString: Untagged
@@ -37,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1850279409320544}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.52, y: 2.73, z: -4.21}
+  m_LocalPosition: {x: -4.073, y: 2.586, z: -4.109}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -97,6 +98,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
+--- !u!114 &114701836847588830
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1850279409320544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dedd27014795416fae7246ccc1eff12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PlayerNumber: 2
+  m_Speed: 2
+  m_TurnSpeed: 180
+  m_PitchRange: 0.2
 --- !u!135 &135661521196352314
 SphereCollider:
   m_ObjectHideFlags: 1
