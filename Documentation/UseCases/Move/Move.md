@@ -38,11 +38,15 @@
 
 [Click here to acess the useCase Diagram][UC]
 
-![alt text][UC]
+![UseCaseDiagram][UC]
 
 [UC]: UCMove.png "UseCaseDiagram Move"
 
 Mock-Up:
+
+![MockUp Angel Moving][MockUp]
+
+[MockUp]: https://media.giphy.com/media/3ohhwuTXZLcTm5eC6k/giphy.gif "Move MockUp"
 
 ### 2.2 Alternative Flows
 
