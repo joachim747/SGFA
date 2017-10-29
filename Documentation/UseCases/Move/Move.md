@@ -9,7 +9,7 @@
 
 | Date          | Version  | Description       | Author |
 | ------------- |----------| ------------------|--------|
-| 29.10.2017    | 1.0      | created Document  |Sauer	|
+| 29.10.2017    | 1.0      | created Document  |Sauer	:sunglasses:|
 
 
 # Table of Contents
@@ -29,11 +29,27 @@
 
 
 ## 1. Use-Case Name
-   ### 1.1 Brief description
+
+### 1.1 Brief description
+
 ## 2. Flow of Events
-   ### 2.1 Basic Flow
-   ### 2.2 Alternative Flows
+
+### 2.1 Basic Flow
+
+[Click here to acess the useCase Diagram][UC]
+
+![alt text][UC]
+
+[UC]: UCMove.png "UseCaseDiagram Move"
+
+Mock-Up:
+
+### 2.2 Alternative Flows
+
 ## 3. Special Requirements
+
 ## 4. Preconditions
+
 ## 5. Postconditions
+
 ## 6. Extension Points
