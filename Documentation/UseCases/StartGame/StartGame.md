@@ -43,6 +43,10 @@
 
 Mock-Up:
 
+![alt text][MainMen]
+
+[MainMen]: MainMenu.png "UseCaseDiagram Move"
+
 ### 2.2 Alternative Flows
 
 [Click here to acess the useCase Diagram][UCAlt1]
@@ -52,6 +56,10 @@ Mock-Up:
 [UCAlt1]: StartGameLevel.png "UseCaseDiagram Move"
 
 Mock-Up:
+
+![alt text][MUAlt1]
+
+[MUAlt1]: LevelSelect.png "UseCaseDiagram Move"
 
 ## 3. Special Requirements
 
