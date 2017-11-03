@@ -40,7 +40,7 @@
 
 | Date          | Version  | Description       | Author |
 | ------------- |----------| ------------------|--------|
-| 20.10.2017    | 1.0      | Initialization    |Florian Jochem; Leon Sauer|
+| 20.10.2017    | 1.0      | Initialization    |Jochem :apple:|
 | 02.11.2017    | 1.1      | converted to MD  |Sauer	:sunglasses:|
 
 # Introduction
