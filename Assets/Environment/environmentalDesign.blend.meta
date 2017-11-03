@@ -1,0 +1,309 @@
+fileFormatVersion: 2
+guid: 1b23e130862026e41b087564b8c8fa27
+timeCreated: 1509717055
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Cube_002
+    100002: Cube_003
+    100004: Cube_004
+    100006: Cylinder
+    100008: Cylinder_001
+    100010: Cylinder_002
+    100012: Cylinder_003
+    100014: Cylinder_004
+    100016: Cylinder_005
+    100018: Cylinder_006
+    100020: //RootNode
+    100022: Fireplace
+    100024: FlatBlock
+    100026: Icosphere
+    100028: PlainBlock1
+    100030: River
+    100032: RiverBed1
+    100034: SmallStone
+    100036: Stone
+    100038: Stone2
+    100040: SpikeTree1
+    100042: SpikeTree2
+    100044: SpikeTree3
+    100046: SpikeTree4
+    100048: SpikeTreeStraight
+    100050: SpikeTreeStraightS
+    100052: Stone1
+    100054: Stone2_001
+    100056: Stone3
+    100058: TreeLeaf
+    100060: TreeStem
+    400000: Cube_002
+    400002: Cube_003
+    400004: Cube_004
+    400006: Cylinder
+    400008: Cylinder_001
+    400010: Cylinder_002
+    400012: Cylinder_003
+    400014: Cylinder_004
+    400016: Cylinder_005
+    400018: Cylinder_006
+    400020: //RootNode
+    400022: Fireplace
+    400024: FlatBlock
+    400026: Icosphere
+    400028: PlainBlock1
+    400030: River
+    400032: RiverBed1
+    400034: SmallStone
+    400036: Stone
+    400038: Stone2
+    400040: SpikeTree1
+    400042: SpikeTree2
+    400044: SpikeTree3
+    400046: SpikeTree4
+    400048: SpikeTreeStraight
+    400050: SpikeTreeStraightS
+    400052: Stone1
+    400054: Stone2_001
+    400056: Stone3
+    400058: TreeLeaf
+    400060: TreeStem
+    2300000: Cube_002
+    2300002: Cube_003
+    2300004: Cube_004
+    2300006: Cylinder
+    2300008: Cylinder_001
+    2300010: Cylinder_002
+    2300012: Cylinder_003
+    2300014: Cylinder_004
+    2300016: Cylinder_005
+    2300018: Cylinder_006
+    2300020: Fireplace
+    2300022: FlatBlock
+    2300024: Icosphere
+    2300026: PlainBlock1
+    2300028: River
+    2300030: RiverBed1
+    2300032: SmallStone
+    2300034: Stone
+    2300036: Stone2
+    2300038: SpikeTree1
+    2300040: SpikeTree2
+    2300042: SpikeTree3
+    2300044: SpikeTree4
+    2300046: SpikeTreeStraight
+    2300048: SpikeTreeStraightS
+    2300050: Stone1
+    2300052: Stone2_001
+    2300054: Stone3
+    2300056: TreeLeaf
+    2300058: TreeStem
+    3300000: Cube_002
+    3300002: Cube_003
+    3300004: Cube_004
+    3300006: Cylinder
+    3300008: Cylinder_001
+    3300010: Cylinder_002
+    3300012: Cylinder_003
+    3300014: Cylinder_004
+    3300016: Cylinder_005
+    3300018: Cylinder_006
+    3300020: Fireplace
+    3300022: FlatBlock
+    3300024: Icosphere
+    3300026: PlainBlock1
+    3300028: River
+    3300030: RiverBed1
+    3300032: SmallStone
+    3300034: Stone
+    3300036: Stone2
+    3300038: SpikeTree1
+    3300040: SpikeTree2
+    3300042: SpikeTree3
+    3300044: SpikeTree4
+    3300046: SpikeTreeStraight
+    3300048: SpikeTreeStraightS
+    3300050: Stone1
+    3300052: Stone2_001
+    3300054: Stone3
+    3300056: TreeLeaf
+    3300058: TreeStem
+    4300000: Icosphere
+    4300002: Cylinder_006
+    4300004: Cylinder_005
+    4300006: Cylinder_004
+    4300008: Cylinder_003
+    4300010: Cylinder_002
+    4300012: Fireplace
+    4300014: SmallStone
+    4300016: Cylinder_001
+    4300018: Cylinder
+    4300020: River
+    4300022: RiverBed1
+    4300024: Cube_004
+    4300026: Cube_003
+    4300028: Cube_002
+    4300030: FlatBlock
+    4300032: PlainBlock1
+    4300034: Stone2
+    4300036: Stone
+    4300038: TreeLeaf
+    4300040: TreeStem
+    4300042: SpikeTree4
+    4300044: SpikeTree3
+    4300046: SpikeTree2
+    4300048: SpikeTree1
+    4300050: SpikeTreeStraight
+    4300052: SpikeTreeStraightS
+    4300054: Stone3
+    4300056: Stone2_001
+    4300058: Stone1
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CampfireBase
+    second: {fileID: 2100000, guid: d08709aa9bac8c340ab68ad5772b7029, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Leaves
+    second: {fileID: 2100000, guid: 877be8e7e431de94a868e61e611d64ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 3beeccb0974cb934a91c0795c317490c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_001
+    second: {fileID: 2100000, guid: 90697c172072c32418842dd083c21000, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_002
+    second: {fileID: 2100000, guid: 94c82cb50f785874c86e2ee0a6625eb9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_003
+    second: {fileID: 2100000, guid: 01c7b514ea4716942886be7dd3fcec62, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_004
+    second: {fileID: 2100000, guid: a64d783c1b2a3654c9a783a6dd9f77cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SpikeTrees
+    second: {fileID: 2100000, guid: 4269b2f67c7a6184a8acb9d514f3a324, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stones
+    second: {fileID: 2100000, guid: ba78b5b86b93ed4408970393fb2f95ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Waterfall
+    second: {fileID: 2100000, guid: 199c70b91feecba43b1bae390a170e8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: ee6daf9631ab3174e84eba20178d8b42, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: envi
+    second: {fileID: 2100000, guid: 170175d922658f24eb7e3fd0d474815e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: envy
+    second: {fileID: 2100000, guid: b92996f840bcd374db7d062027bcf24b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: unnamed
+    second: {fileID: 2100000, guid: eec440c0be2f12f41814cb689763d59a, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
