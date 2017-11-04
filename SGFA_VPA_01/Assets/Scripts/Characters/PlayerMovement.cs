@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
 		//running every frame
 		m_MovementInputValue = Input.GetAxis(m_MovementAxisName);
 		m_TurnInputValue = Input.GetAxis(m_TurnAxisName);
-
+		
 		//WalkAudio();
 	}
 
@@ -76,6 +76,13 @@ public class PlayerMovement : MonoBehaviour
 		Quaternion turnRotation = Quaternion.Euler(0f, turn, 0f);
 
 		m_Rigidbody.MoveRotation(m_Rigidbody.rotation * turnRotation);
+	}
+
+	void OnCollisionEnter(Collision col){
+		//ramming -- inverted could be used for deathzones
+		if(col.gameObject.name == "testcube"){
+			Destroy(col.gameObject);
+		}
 	}
 
 }
