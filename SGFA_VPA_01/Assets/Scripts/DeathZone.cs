@@ -5,6 +5,8 @@ using UnityEngine;
 public class DeathZone : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col){
-		Destroy(col.gameObject);
+		
+		col.gameObject.GetComponent<PlayerHealth>().DecreaseOverTime(25f);
+		
 	}
 }

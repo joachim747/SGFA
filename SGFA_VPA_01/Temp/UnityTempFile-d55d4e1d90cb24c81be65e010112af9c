@@ -154,7 +154,6 @@
 -define:UNITY_EDITOR_OSX
 -define:ENABLE_NATIVE_ARRAY_CHECKS
 -define:UNITY_TEAM_LICENSE
-'Assets/DeathZone.cs'
 'Assets/Lomenu UI/Scripts/BrightnessAdjustment.cs'
 'Assets/Lomenu UI/Scripts/ButtonSound.cs'
 'Assets/Lomenu UI/Scripts/Exit.cs'
@@ -169,6 +168,7 @@
 'Assets/Scripts/Camera/CameraControl.cs'
 'Assets/Scripts/Characters/PlayerHealth.cs'
 'Assets/Scripts/Characters/PlayerMovement.cs'
+'Assets/Scripts/DeathZone.cs'
 'Assets/Scripts/Manager/GameManager.cs'
 'Assets/Scripts/Manager/HeroManager.cs'
 'Assets/Scripts/UI/UIDirectionControl.cs'

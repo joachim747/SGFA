@@ -168,6 +168,7 @@
 'Assets/Scripts/Camera/CameraControl.cs'
 'Assets/Scripts/Characters/PlayerHealth.cs'
 'Assets/Scripts/Characters/PlayerMovement.cs'
+'Assets/Scripts/DeathZone.cs'
 'Assets/Scripts/Manager/GameManager.cs'
 'Assets/Scripts/Manager/HeroManager.cs'
 'Assets/Scripts/UI/UIDirectionControl.cs'

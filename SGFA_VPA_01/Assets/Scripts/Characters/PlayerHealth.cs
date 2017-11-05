@@ -15,6 +15,20 @@ public class PlayerHealth : MonoBehaviour {
 	private float m_CurrentHealth;
 	private bool m_Dead;
 
+	public void DecreaseOverTime(float dmgTick){
+		StartCoroutine(DmgXSecond(dmgTick));
+	}
+
+	IEnumerator DmgXSecond(float dmgTick){
+		int ticks = 0;
+		int totalTicks = 4;
+
+		while(ticks < totalTicks){
+			ticks++;
+			TakeDamage(dmgTick);
+			yield return new WaitForSecondsRealtime(1);
+		}
+	}
 
 	private void OnEnable(){
 		m_CurrentHealth = m_StartingHealth;
