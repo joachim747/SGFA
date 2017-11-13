@@ -45,9 +45,9 @@
 
 Feature File:
 
-![UseCaseDiagram][FUC]
+![Feature Start Move][FUC]
 
-[FUC]: FeatureMove.png "UseCaseDiagram Move"
+[FUC]: FeatureMove.PNG "UseCaseDiagram Move"
 
 
 Mock-Up:

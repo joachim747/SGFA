@@ -45,9 +45,9 @@
 
 Feature File:
 
-![alt text][FUC]
+![Feature Start Game][FUC]
 
-[FUC]: FeatureStartGame.png "UseCaseDiagram Move"
+[FUC]: FeatureStartGame.PNG "UseCaseDiagram Move"
 
 Mock-Up:
 
