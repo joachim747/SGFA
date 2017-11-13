@@ -1,7 +1,7 @@
 # SGFA
 # Use Case Specification: Move
 
-## Version
+## Version 1.1
 
 # Revision Histoy
 
@@ -10,6 +10,7 @@
 | Date          | Version  | Description       | Author |
 | ------------- |----------| ------------------|--------|
 | 29.10.2017    | 1.0      | created Document  |Sauer	:sunglasses:|
+| 13.11.2017    | 1.1      | created Document  |Sauer	:sunglasses:|
 
 
 # Table of Contents
@@ -41,6 +42,13 @@
 ![UseCaseDiagram][UC]
 
 [UC]: UCMove.png "UseCaseDiagram Move"
+
+Feature File:
+
+![UseCaseDiagram][FUC]
+
+[FUC]: FeatureMove.png "UseCaseDiagram Move"
+
 
 Mock-Up:
 
