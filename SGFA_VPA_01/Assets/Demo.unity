@@ -871,7 +871,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 201300184
+  randomSeed: -15711266
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -4385,7 +4385,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -289764873
+  randomSeed: -920021397
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -7812,8 +7812,9 @@ MonoBehaviour:
   m_StartDelay: 3
   m_EndDelay: 3
   m_CameraControl: {fileID: 16821217}
-  m_PlayerPrefab: {fileID: 1850279409320544, guid: 6d2d8c06c3639498481610b90e8199ac,
-    type: 2}
+  m_PlayerPrefab:
+  - {fileID: 1850279409320544, guid: 6d2d8c06c3639498481610b90e8199ac, type: 2}
+  - {fileID: 1850279409320544, guid: 58e869c6f9175ed4693ef128046e059e, type: 2}
   m_Player:
   - m_PlayerColor: {r: 0.978, g: 0, b: 0, a: 0}
     m_Spawnpoint: {fileID: 358390548}

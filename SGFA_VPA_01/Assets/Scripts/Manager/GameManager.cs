@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour {
 	public float m_EndDelay = 3f;
 	public CameraControl m_CameraControl;
 	//public Text m_MessageText;
-	public GameObject m_PlayerPrefab;
+	public GameObject[] m_PlayerPrefab;
 	public HeroManager[] m_Player;
 
 	private int m_LvlNumber;
@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour {
 	
 	private void SpawnAllPlayers(){
 		for(int i=0; i < m_Player.Length;i++){
-			m_Player[i].m_Instance = Instantiate(m_PlayerPrefab, m_Player[i].m_Spawnpoint.position, m_Player[i].m_Spawnpoint.rotation) as GameObject;
+			m_Player[i].m_Instance = Instantiate(m_PlayerPrefab[i], m_Player[i].m_Spawnpoint.position, m_Player[i].m_Spawnpoint.rotation) as GameObject;
 			m_Player[i].m_PlayerNumber = i+1;
 			m_Player[i].Setup();
 		}
