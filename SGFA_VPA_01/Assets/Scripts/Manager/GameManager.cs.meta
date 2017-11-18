@@ -1,14 +1,12 @@
 fileFormatVersion: 2
 guid: dad61d9e99caf4ad092ed1f4b6961760
-timeCreated: 1509877945
+timeCreated: 1509964299
 licenseType: Free
 MonoImporter:
-  externalObjects: {}
   serializedVersion: 2
   defaultReferences:
   - m_CameraControl: {instanceID: 0}
-  - m_PlayerPrefab: {fileID: 1850279409320544, guid: 6d2d8c06c3639498481610b90e8199ac,
-      type: 2}
+  - m_PlayerPrefab: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
