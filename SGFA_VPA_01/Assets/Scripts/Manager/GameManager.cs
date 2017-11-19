@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,13 +8,15 @@ public class GameManager : MonoBehaviour {
 	public float m_StartDelay = 3f;
 	public float m_EndDelay = 3f;
 	public CameraControl m_CameraControl;
-	//public Text m_MessageText;
+	public Text m_MessageText;
 	public GameObject m_PlayerPrefab;
 	public HeroManager[] m_Player;
 
 	private int m_LvlNumber;
+	private bool m_goalAchieved = false;
 	private WaitForSeconds m_StartWait;
 	private WaitForSeconds m_EndWait;
+	private HeroManager mvp;
 
 	// Use this for initialization
 	private void Start () {
@@ -25,7 +26,7 @@ public class GameManager : MonoBehaviour {
 		SpawnAllPlayers();
 		SetCameraTargets();
 
-		//StartCoroutine(GameLoop());
+		StartCoroutine(GameLoop());
 	}
 	
 	private void SpawnAllPlayers(){
@@ -45,5 +46,70 @@ public class GameManager : MonoBehaviour {
 
 		m_CameraControl.m_Targets = targets;
 	}
+
+	private IEnumerator GameLoop(){
+		yield return StartCoroutine(LevelStarting());
+		yield return StartCoroutine(LevelPlaying());
+		yield return StartCoroutine(LevelEnding());
+	}
+
+	private IEnumerator LevelStarting(){
+		ResetPlayers();
+		DisablePlayerControl();
+
+		m_CameraControl.SetStartPositionAndSize(); 
+
+		m_LvlNumber++;
+		m_MessageText.text = "Reach the other side";
+		
+		yield return m_StartWait;
+	}
+
+	private IEnumerator LevelPlaying(){
+		EnablePlayerControl();
+
+		m_MessageText.text = string.Empty;
+
+
+		while(m_Player[0].getTargetState() != true && m_Player[1].getTargetState() !=true){
+			yield return null;
+		}
+	}
+
+	private IEnumerator LevelEnding(){
+		DisablePlayerControl();
+
+		mvp = null;
+
+		yield return m_EndWait;
+	}
+
+
+
+	private void ResetPlayers()
+    {
+        for (int i = 0; i < m_Player.Length; i++)
+        {
+            m_Player[i].ResetPlayers();
+        }
+    }
+
+
+    private void EnablePlayerControl()
+    {
+        for (int i = 0; i < m_Player.Length; i++)
+        {
+            m_Player[i].EnableControl();
+        }
+    }
+
+
+    private void DisablePlayerControl()
+    {
+        for (int i = 0; i < m_Player.Length; i++)
+        {
+            m_Player[i].DisableControl();
+        }
+    }
 
 }

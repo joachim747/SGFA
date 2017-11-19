@@ -19,6 +19,10 @@ public class PlayerMovement : MonoBehaviour
 	private float m_OriginalPitch;
 
 
+	public int getPlayerNumber(){
+		return m_PlayerNumber;
+	}
+
 	private void Awake(){
 		m_Rigidbody = GetComponent<Rigidbody>();
 	}
