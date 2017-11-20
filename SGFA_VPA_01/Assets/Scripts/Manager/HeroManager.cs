@@ -44,7 +44,7 @@ public class HeroManager
 		m_CanvasGameObject.SetActive(true);
 	}
 
-	public void Reset(){
+	public void ResetPlayers(){
 		m_Instance.transform.position = m_Spawnpoint.position;
 		m_Instance.transform.rotation = m_Spawnpoint.rotation;
 
