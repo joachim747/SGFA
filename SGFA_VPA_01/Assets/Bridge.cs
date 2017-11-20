@@ -24,10 +24,16 @@ public class Bridge : MonoBehaviour {
 
 	void OnTriggerExit(Collider col){
 		if(col.gameObject.tag == "Player"){
-			bridgeRisen = false;
-			BridgeControl("Lowered");
+			StartCoroutine(Wait());
 		}
 	}
+
+	IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(7);
+		bridgeRisen = false;
+		BridgeControl("Lowered");
+    }
 
 	void BridgeControl(string comand){
 		animator.SetTrigger(comand);
