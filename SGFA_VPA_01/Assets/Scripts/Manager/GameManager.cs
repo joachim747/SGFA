@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour {
 	private WaitForSeconds m_StartWait;
 	private WaitForSeconds m_EndWait;
 	private HeroManager mvp;
+	private bool check = false;
 
 	// Use this for initialization
 	private void Start () {
@@ -70,9 +71,11 @@ public class GameManager : MonoBehaviour {
 
 		m_MessageText.text = string.Empty;
 
-
-		while(m_Player[0].getTargetState() != true && m_Player[1].getTargetState() !=true){
+		while(check == false){
 			yield return null;
+			if((m_Player[0].m_Instance.GetComponent<PlayerSettings>().getTargetState() == true) && (m_Player[1].m_Instance.GetComponent<PlayerSettings>().getTargetState() == true)){
+				check = true;
+			}
 		}
 	}
 
@@ -80,6 +83,8 @@ public class GameManager : MonoBehaviour {
 		DisablePlayerControl();
 
 		mvp = null;
+
+		m_MessageText.text = "Level finished";
 
 		yield return m_EndWait;
 	}

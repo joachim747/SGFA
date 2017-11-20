@@ -15,7 +15,6 @@ public class HeroManager
 
 	private PlayerMovement m_Movement;
 	private GameObject m_CanvasGameObject;
-	private bool inZone = false;
 
 
 	public void Setup(){
@@ -53,11 +52,4 @@ public class HeroManager
 		m_Instance.SetActive(true);
 	}
 
-	public void setTargetState(bool newState){
-		inZone = newState;
-	}
-
-	public bool getTargetState(){
-		return inZone;
-	}
 }

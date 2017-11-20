@@ -10,7 +10,7 @@ public class TargetScript : MonoBehaviour {
 	private int actPlayerNumber, otherPlayerNumber;
 
 	void OnTriggerEnter(Collider col){
-		col.gameObject.GetComponent<HeroManager>().setTargetState(true);
+		col.gameObject.GetComponent<PlayerSettings>().setTargetState(true);
 	}
 
 	void OnTriggerStay(Collider col){
@@ -18,7 +18,7 @@ public class TargetScript : MonoBehaviour {
 	}
 
 	void OnTriggerExit(Collider col){
-		col.gameObject.GetComponent<HeroManager>().setTargetState(false);
+		col.gameObject.GetComponent<PlayerSettings>().setTargetState(false);
 
 	}
 
