@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour {
 
 		m_CameraControl.SetStartPositionAndSize(); 
 
-		m_LvlNumber++;
+		//yield return m_StartWait;
 		m_MessageText.text = "Reach the other side";
 		
 		yield return m_StartWait;
