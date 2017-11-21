@@ -11,7 +11,7 @@ public class HeroManager
 	[HideInInspector] public int m_PlayerNumber;
 	[HideInInspector] public string m_ColoredPlayerText;
 	[HideInInspector] public GameObject m_Instance;
-	[HideInInspector] public int m_Wins;
+	[HideInInspector] public int m_Mvp;
 
 	private PlayerMovement m_Movement;
 	private GameObject m_CanvasGameObject;

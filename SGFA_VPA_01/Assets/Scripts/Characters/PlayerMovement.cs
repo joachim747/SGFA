@@ -9,14 +9,14 @@ public class PlayerMovement : MonoBehaviour
 	public float m_Speed = 12f;
 	public float m_TurnSpeed = 180f;
 	//public AudioSource m_MovementAudio;
-	public float m_PitchRange = 0.2f; //used for audio pitch
+	//public float m_PitchRange = 0.2f; //used for audio pitch
 
 	private string m_MovementAxisName; //based on the player number it needs to be changed
 	private string m_TurnAxisName;
 	private Rigidbody m_Rigidbody; //reference to the players rigidbody -- used to move around
 	private float m_MovementInputValue;
 	private float m_TurnInputValue;
-	private float m_OriginalPitch;
+	//private float m_OriginalPitch;
 
 
 	private void Awake(){
