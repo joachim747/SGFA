@@ -38,7 +38,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4023359427820700}
   - component: {fileID: 65703099305911716}
-  - component: {fileID: 114605117491586302}
+  - component: {fileID: 114458764483910804}
   m_Layer: 0
   m_Name: TriggerZone
   m_TagString: Untagged
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 4236830189005130}
   - component: {fileID: 95612002767355220}
   m_Layer: 0
-  m_Name: New Prefab
+  m_Name: NicerBridgePre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -150,7 +150,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 3fd30874d79b8a14e800d5d6e9c6d473, type: 2}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -210,14 +210,14 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1435441262241992}
-  m_Mesh: {fileID: 4300000, guid: ccb1c9b45f9f329438ff33392eba336e, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 533bebe99177966429cec568cb8d7aac, type: 3}
 --- !u!33 &33692187258413704
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1753698680011670}
-  m_Mesh: {fileID: 4300002, guid: ccb1c9b45f9f329438ff33392eba336e, type: 3}
+  m_Mesh: {fileID: 4300002, guid: 533bebe99177966429cec568cb8d7aac, type: 3}
 --- !u!54 &54977985838226706
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -290,7 +290,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114605117491586302
+--- !u!114 &114458764483910804
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -298,6 +298,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1472288315129948}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d06f6247755cb8b48a01c15d7a6e28dc, type: 3}
+  m_Script: {fileID: 11500000, guid: a8989f78a64aaaa4d8f5f3301b2603be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
