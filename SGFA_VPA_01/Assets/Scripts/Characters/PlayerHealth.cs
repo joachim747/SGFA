@@ -59,4 +59,8 @@ public class PlayerHealth : MonoBehaviour {
 
 		gameObject.SetActive(false);
 	}
+
+	public bool getIfDead(){
+		return m_Dead;
+	}
 }

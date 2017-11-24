@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour {
 	private WaitForSeconds m_StartWait;
 	private WaitForSeconds m_EndWait;
 	private bool check = false;
+	private string str_msg = "";
+	private int m_AmountOfDeaths=0;
 
 	// Use this for initialization
 	private void Start () {
@@ -74,14 +76,32 @@ public class GameManager : MonoBehaviour {
 			yield return null;
 			if((m_Player[0].m_Instance.GetComponent<PlayerSettings>().getTargetState() == true) && (m_Player[1].m_Instance.GetComponent<PlayerSettings>().getTargetState() == true)){
 				check = true;
+				str_msg = "Level finished";
+			}
+			if(m_Player[0].m_Instance.GetComponent<PlayerHealth>().getIfDead() == true){
+				StartCoroutine(DeathHandling(m_Player[0]));
+			}
+			if(m_Player[1].m_Instance.GetComponent<PlayerHealth>().getIfDead()==true){
+				StartCoroutine(DeathHandling(m_Player[1]));
 			}
 		}
+	}
+
+	private IEnumerator DeathHandling(HeroManager hm){
+		m_AmountOfDeaths++;
+		m_MessageText.text = "Died: " + m_AmountOfDeaths;
+		hm.ResetPlayers();
+		yield return m_StartWait;
+		m_MessageText.text = string.Empty;
 	}
 
 	private IEnumerator LevelEnding(){
 		DisablePlayerControl();
 
-		m_MessageText.text = "Level finished";
+		m_MessageText.text = str_msg;
+
+		check = false;
+		ResetPlayers();
 
 		yield return m_EndWait;
 	}
