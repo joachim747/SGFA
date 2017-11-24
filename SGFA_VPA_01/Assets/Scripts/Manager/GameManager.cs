@@ -101,7 +101,6 @@ public class GameManager : MonoBehaviour {
 		m_MessageText.text = str_msg;
 
 		check = false;
-		ResetPlayers();
 
 		yield return m_EndWait;
 	}
