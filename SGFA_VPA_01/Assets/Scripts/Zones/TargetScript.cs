@@ -7,12 +7,15 @@ public class TargetScript : MonoBehaviour {
 	//in general it should be checked, if the colliding gameobject is of type player, else errors could occur
 
 	void OnTriggerEnter(Collider col){
-		col.gameObject.GetComponent<PlayerSettings>().setTargetState(true);
+		if(col.gameObject.tag == "Player"){
+			col.gameObject.GetComponent<PlayerSettings>().setTargetState(true);
+		}
 	}
 
 	void OnTriggerExit(Collider col){
-		col.gameObject.GetComponent<PlayerSettings>().setTargetState(false);
-
+		if(col.gameObject.tag == "Player"){
+			col.gameObject.GetComponent<PlayerSettings>().setTargetState(false);
+		}
 	}
 
 	
