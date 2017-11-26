@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 4236830189005130}
   - component: {fileID: 95612002767355220}
   m_Layer: 0
-  m_Name: New Prefab
+  m_Name: NicerBridgePre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
