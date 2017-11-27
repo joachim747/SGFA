@@ -713,7 +713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minIntens: 3
   maxIntens: 5
-  speed: 1
+  speed: 0.35
 --- !u!1 &674661058
 GameObject:
   m_ObjectHideFlags: 0
