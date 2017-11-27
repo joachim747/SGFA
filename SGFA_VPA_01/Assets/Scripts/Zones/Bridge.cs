@@ -17,6 +17,7 @@ public class Bridge : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider col){
 		if(col.gameObject.tag == "Player"){
+			animator.SetBool("buttonPressed", true);
 			bridgeRisen = true;
 			BridgeControl("Risen");
 		}
@@ -30,6 +31,7 @@ public class Bridge : MonoBehaviour {
 
 	IEnumerator Wait()
     {
+		animator.SetBool("buttonPressed", false);
         yield return new WaitForSeconds(7);
 		bridgeRisen = false;
 		BridgeControl("Lowered");
