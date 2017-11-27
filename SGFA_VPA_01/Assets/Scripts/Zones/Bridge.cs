@@ -31,8 +31,8 @@ public class Bridge : MonoBehaviour {
 
 	IEnumerator Wait()
     {
-		animator.SetBool("buttonPressed", false);
         yield return new WaitForSeconds(7);
+		animator.SetBool("buttonPressed", false);
 		bridgeRisen = false;
 		BridgeControl("Lowered");
     }
