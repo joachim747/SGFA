@@ -112,7 +112,9 @@ N/A
 
 ## Deployment View
 
-N/A
+![Depoyment][DP]
+
+[DP]:deployment.png
 
 ## Implementation View
 
