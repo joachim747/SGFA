@@ -449,11 +449,11 @@ Prefab:
       objectReference: {fileID: 2100000, guid: edc1992df4e7e431891c3840a5a80a8c, type: 2}
     - target: {fileID: 4023359427820700, guid: 80d366e1b1f85f8479a90af0fdde1600, type: 2}
       propertyPath: m_LocalScale.x
-      value: 2.32
+      value: 1.81
       objectReference: {fileID: 0}
     - target: {fileID: 4023359427820700, guid: 80d366e1b1f85f8479a90af0fdde1600, type: 2}
       propertyPath: m_LocalScale.z
-      value: 2.32
+      value: 1.81
       objectReference: {fileID: 0}
     - target: {fileID: 4302888799938800, guid: 80d366e1b1f85f8479a90af0fdde1600, type: 2}
       propertyPath: m_LocalPosition.y
@@ -817,7 +817,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: edc1992df4e7e431891c3840a5a80a8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
