@@ -13,5 +13,9 @@ public class Menu_Manager : MonoBehaviour {
 	public void StartGame(){
 		SceneManager.LoadScene("Demo");
 	}
+
+	public void OpenWebsite(string url){
+		Application.OpenURL(url);
+	}
 	
 }

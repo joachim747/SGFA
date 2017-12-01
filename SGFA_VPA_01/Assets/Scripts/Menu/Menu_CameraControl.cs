@@ -9,7 +9,10 @@ public class Menu_CameraControl : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		GameObject.Find("Page_Armory").SetActive(false);
+		GameObject.Find("Page_Settings").SetActive(false);
+		GameObject.Find("Page_Quit").SetActive(false);
+		GameObject.Find("Page_Level").SetActive(false);
 	}
 	
 	// Update is called once per frame
