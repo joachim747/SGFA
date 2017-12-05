@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -84,6 +85,11 @@ public class GameManager : MonoBehaviour {
 			if(m_Player[1].m_Instance.GetComponent<PlayerHealth>().getIfDead()==true){
 				StartCoroutine(DeathHandling(m_Player[1]));
 			}
+			if (Input.GetKeyDown(KeyCode.Escape)){
+            	Debug.Log("Back to MainMenu");
+				SceneManager.LoadScene("MainMenu");
+				break;
+			}
 		}
 	}
 
@@ -103,6 +109,8 @@ public class GameManager : MonoBehaviour {
 		check = false;
 
 		yield return m_EndWait;
+
+		SceneManager.LoadScene("MainMenu");
 	}
 
 
