@@ -10,7 +10,7 @@
 | Date          | Version  | Description       | Author |
 | ------------- |----------| ------------------|--------|
 | 29.10.2017    | 1.0      | created Document  |Sauer	:sunglasses:|
-| 13.11.2017    | 1.1      | created Document  |Sauer	:sunglasses:|
+| 13.11.2017    | 1.1      | Added Mock-Up  |Sauer	:sunglasses:|
 
 
 # Table of Contents
