@@ -46,6 +46,9 @@
 
 Mock-Up:
 
+![MockUp End Game][MockUp]
+
+[MockUp]: MockUpEndGame.png "End Game MockUp"
 
 ### 2.2 Alternative Flows
 

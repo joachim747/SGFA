@@ -46,6 +46,9 @@
 
 Mock-Up:
 
+![MenuEnd Game][MockUp]
+
+[MockUp]: MockUpMenu.png "Menu MockUp"
 
 ### 2.2 Alternative Flows
 
