@@ -11,7 +11,7 @@ public class Menu_Manager : MonoBehaviour {
 	}
 
 	public void StartGame(){
-		SceneManager.LoadScene("Demo");
+		SceneManager.LoadScene("Story_1");
 	}
 
 	public void OpenWebsite(string url){
