@@ -4,9 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour {
+public class LevelManager : MonoBehaviour {
 
 	public int m_NumLevelsToComplete = 1;
+	public int m_LvlNumber;
 	public float m_StartDelay = 3f;
 	public float m_EndDelay = 3f;
 	public CameraControl m_CameraControl;
@@ -14,7 +15,6 @@ public class GameManager : MonoBehaviour {
 	public GameObject[] m_PlayerPrefab;
 	public HeroManager[] m_Player;
 
-	private int m_LvlNumber;
 	private WaitForSeconds m_StartWait;
 	private WaitForSeconds m_EndWait;
 	private bool check = false;
@@ -62,8 +62,8 @@ public class GameManager : MonoBehaviour {
 
 		m_CameraControl.SetStartPositionAndSize(); 
 
-		//yield return m_StartWait;
-		m_MessageText.text = "Reach the other side";
+		yield return m_StartWait;
+		m_MessageText.text = "Reach the Zone";
 		
 		yield return m_StartWait;
 	}
@@ -110,7 +110,17 @@ public class GameManager : MonoBehaviour {
 
 		yield return m_EndWait;
 
-		SceneManager.LoadScene("MainMenu");
+		switch (m_LvlNumber) {
+			case 1: 
+				SceneManager.LoadScene("Story_2");
+				break;
+			case 2:
+				SceneManager.LoadScene("MainMenu");
+				break;
+			default:
+				SceneManager.LoadScene("MainMenu");
+				break;
+		}
 	}
 
 
