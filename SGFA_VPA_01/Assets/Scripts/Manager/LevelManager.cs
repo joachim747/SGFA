@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour {
 
-	public int m_NumLevelsToComplete = 1;
 	public int m_LvlNumber;
 	public float m_StartDelay = 3f;
 	public float m_EndDelay = 3f;
