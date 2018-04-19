@@ -8,12 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MainMenu.unity
     guid: 6d32331c3c4504f92a466722cef0afb6
-  - enabled: 0
-    path: Assets/Demo.unity
-    guid: c54f92d8624b34e648468290a0f7a2d9
   - enabled: 1
     path: Assets/Story_1.unity
-    guid: a8d9317097ffe43049408c5e44d8b1e3
+    guid: c54f92d8624b34e648468290a0f7a2d9
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Story_2.unity
-    guid: 9d1b3ad036d4f42a394b567758a647b4
+    guid: 7b7d611fcb43746a09f0f8ff33838c38
