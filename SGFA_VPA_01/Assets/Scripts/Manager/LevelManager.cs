@@ -116,6 +116,12 @@ public class LevelManager : MonoBehaviour {
 			case 2:
 				SceneManager.LoadScene("MainMenu");
 				break;
+			case 3:
+				SceneManager.LoadScene("Story_4");
+				break;
+			case 4:
+				SceneManager.LoadScene("MainMenu");
+				break;
 			default:
 				SceneManager.LoadScene("MainMenu");
 				break;
