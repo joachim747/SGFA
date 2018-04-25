@@ -7,11 +7,6 @@ public class Menu_Manager : MonoBehaviour {
 
 	public void CloseApplication(){
 		Debug.Log("Game has been quitted");
-		Application.Quit();
-	}
-
-	public void StartGame(){
-		SceneManager.LoadScene("Story_1");
 	}
 
 	public void OpenWebsite(string url){
