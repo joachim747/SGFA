@@ -9,4 +9,15 @@ install:
 - "./scripts/install.sh"
 script:
 - "./scripts/build.sh"
-  
+deploy:
+  provider: releases
+  api_key:
+    secure: g5G7i+Saisc1RKHAKj9tyAOBic7GzFu/PkYY25xQSDsrOBx0OQPPMIwf0FMsN3SCKuwYyt7kCDaMeZz1oYVK0u1gVWUCu78zsOCv+ZQN8HQRqLV4LgRMWd9FJv4TuMEIaB3umCQ3d5UzAbCVbR58F6+TAXwvUWXkVHCaa1AtoFMnNtkmMxFqQa8ySPXP78HKKmIstNf6pSIcl6ZSR2cerkRNFrlLMxTvGhuYe6AVL31STCj9aV2VTbd461mrdaJIerSe4pSebMQ/sfievlHKQaE/CgMS9rZbrtTXtjsLaGvWx/om0eSuRABj8tfRE7zHF3oRJwiOo6gqGl8g5s2MbYEtx9WH/WSKWykTJU36/B/hRhCxzcieVOg+u30h5iLK40SmbAlPEsERVgjsiBjbX+T5kmZz7wLbQKK+iZvJr8+Q2sS7L/wc6xyJdrHzvwQ83oHArGfPzc1yGjV/eqTxkBRpAoSnRqiaSGJ/WztVAVwzLElhmSVg27l80QcY0iA+2+kiKN1EtUupSPDMNmtz6utztaUwThmAoMCkRq3I0OgShpyZg0ryEWVjvoaiDYB4j4jHcNxsUnnUOLRpxQqz2j7NRwT5XyxBLfjdvlOOZtyTHUi9FwsC1L+nsLAjx8+4aIBNXGRTj+SmyClXH2XKb3vJKjmpik5o1fjDOHTTLC4=
+  file:
+    - "${TRAVIS_BUILD_DIR}/SGFA_VPA_01/Build/windows.zip"
+    - "${TRAVIS_BUILD_DIR}/SGFA_VPA_01/Build/mac.zip"
+    - "${TRAVIS_BUILD_DIR}/SGFA_VPA_01/Build/linux.zip"
+  skip_cleanup: true
+  on:
+    tags: true
+    
