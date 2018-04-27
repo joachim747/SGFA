@@ -114,10 +114,10 @@ public class LevelManager : MonoBehaviour {
 				SceneManager.LoadScene("Story_2");
 				break;
 			case 2:
-				SceneManager.LoadScene("MainMenu");
+				SceneManager.LoadScene("Story_3");
 				break;
 			case 3:
-				SceneManager.LoadScene("Story_4");
+				SceneManager.LoadScene("MainMenu");
 				break;
 			case 4:
 				SceneManager.LoadScene("MainMenu");
