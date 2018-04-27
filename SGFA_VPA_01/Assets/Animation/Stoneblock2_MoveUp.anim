@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Move_Up
+  m_Name: Stoneblock2_MoveUp
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -19,25 +19,25 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: {x: -6.739995, y: 0.7449989, z: -0.289999}
+        value: {x: -1.7449, y: 0.7449989, z: -0.289999}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
         time: 1.3333334
-        value: {x: -6.739995, y: 7.58, z: -0.29}
+        value: {x: -1.7449, y: 7.58, z: -0.29}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
         time: 1.75
-        value: {x: -6.739995, y: 7.0258894, z: -0.29}
+        value: {x: -1.7449, y: 7.0258894, z: -0.29}
         inSlope: {x: 0, y: -2.1708097, z: 0}
         outSlope: {x: 0, y: -2.1708097, z: 0}
         tangentMode: 0
       - serializedVersion: 2
         time: 2.3666666
-        value: {x: -6.739995, y: 6.0263524, z: -0.29}
+        value: {x: -1.7449, y: 6.0263524, z: -0.29}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -89,19 +89,25 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: -6.739995
+        value: -1.7449
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 1.3333334
-        value: -6.739995
+        value: -1.7449
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
         time: 1.75
-        value: -6.739995
+        value: -1.7449
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 2.3666666
+        value: -1.7449
         inSlope: 0
         outSlope: 0
         tangentMode: 136

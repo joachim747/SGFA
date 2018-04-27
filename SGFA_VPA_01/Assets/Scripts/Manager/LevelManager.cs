@@ -62,7 +62,7 @@ public class LevelManager : MonoBehaviour {
 		m_CameraControl.SetStartPositionAndSize(); 
 
 		yield return m_StartWait;
-		m_MessageText.text = "Reach the Zone";
+		m_MessageText.text = "Reach the zone";
 		
 		yield return m_StartWait;
 	}
