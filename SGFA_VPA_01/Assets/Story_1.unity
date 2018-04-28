@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1290689113}
-  m_IndirectSpecularColor: {r: 0.24560747, g: 0.3814781, b: 0.8525758, a: 1}
+  m_IndirectSpecularColor: {r: 0.24560761, g: 0.38147825, b: 0.8525761, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -769,7 +769,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31e3eec66388b4a5ebf29fae319c3c7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NumLevelsToComplete: 1
   m_LvlNumber: 1
   m_StartDelay: 3
   m_EndDelay: 3
@@ -4803,10 +4802,9 @@ GameObject:
   - component: {fileID: 1939762736}
   - component: {fileID: 1939762735}
   - component: {fileID: 1939762734}
-  - component: {fileID: 1939762738}
   m_Layer: 0
   m_Name: testcube
-  m_TagString: Untagged
+  m_TagString: Box
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4877,14 +4875,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1939762738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1939762733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0d970d9698fd4315b21585a322c36da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
