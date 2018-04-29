@@ -4957,8 +4957,8 @@ Transform:
   - {fileID: 725379253}
   - {fileID: 1867146136}
   - {fileID: 894303883}
-  - {fileID: 652770483}
   - {fileID: 1304682337}
+  - {fileID: 652770483}
   - {fileID: 1639499873}
   - {fileID: 745457251}
   - {fileID: 1233534477}
@@ -8348,7 +8348,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Third Level -'
+  m_Text: Level 3
 --- !u!114 &1055700099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9187,7 +9187,7 @@ Transform:
   m_LocalScale: {x: 1.2351209, y: 0.78028005, z: 1.0189041}
   m_Children: []
   m_Father: {fileID: 383477795}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1304682338
 MeshCollider:
