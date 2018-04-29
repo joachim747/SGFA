@@ -11,18 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Story_1.unity
     guid: c54f92d8624b34e648468290a0f7a2d9
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Story_2.unity
     guid: 7b7d611fcb43746a09f0f8ff33838c38
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Story_3.unity
     guid: 766baae2104844215a51c601e63e1a47
