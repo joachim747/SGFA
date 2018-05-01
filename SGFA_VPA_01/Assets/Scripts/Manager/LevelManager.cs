@@ -9,13 +9,16 @@ public class LevelManager : MonoBehaviour {
 	public int m_LvlNumber;
 	public float m_StartDelay = 3f;
 	public float m_EndDelay = 3f;
+	public float m_HintDelay = 5f;
 	public CameraControl m_CameraControl;
 	public Text m_MessageText;
+	public GameObject hint;
 	public GameObject[] m_PlayerPrefab;
 	public HeroManager[] m_Player;
 
 	private WaitForSeconds m_StartWait;
 	private WaitForSeconds m_EndWait;
+	private WaitForSeconds m_HintWait;
 	private bool check = false;
 	private string str_msg = "";
 	private int m_AmountOfDeaths=0;
@@ -24,6 +27,7 @@ public class LevelManager : MonoBehaviour {
 	private void Start () {
 		m_StartWait = new WaitForSeconds(m_StartDelay);
 		m_EndWait = new WaitForSeconds(m_EndDelay);
+		m_HintWait = new WaitForSeconds(m_HintDelay);
 
 		SpawnAllPlayers();
 		SetCameraTargets();
@@ -69,6 +73,7 @@ public class LevelManager : MonoBehaviour {
 
 	private IEnumerator LevelPlaying(){
 		EnablePlayerControl();
+		StartCoroutine(handleHint());
 
 		m_MessageText.text = string.Empty;
 
@@ -129,6 +134,11 @@ public class LevelManager : MonoBehaviour {
 	}
 
 
+	private IEnumerator handleHint(){
+		hint.SetActive(true);
+		yield return m_HintWait;
+		hint.SetActive(false);
+	}
 
 	private void ResetPlayers()
     {

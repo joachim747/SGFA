@@ -824,9 +824,9 @@ RectTransform:
   m_Father: {fileID: 1615499307}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -11}
+  m_AnchorMin: {x: 0.5, y: 0.1}
+  m_AnchorMax: {x: 0.5, y: 0.1}
+  m_AnchoredPosition: {x: 0, y: 17}
   m_SizeDelta: {x: 600, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &640098845
@@ -1026,8 +1026,10 @@ MonoBehaviour:
   m_LvlNumber: 1
   m_StartDelay: 3
   m_EndDelay: 3
+  m_HintDelay: 5
   m_CameraControl: {fileID: 16821217}
   m_MessageText: {fileID: 1129738925}
+  hint: {fileID: 640098843}
   m_PlayerPrefab:
   - {fileID: 1712033863726032, guid: 87104d0ed5d7048c1b5d0e150010d35f, type: 2}
   - {fileID: 1422674640954980, guid: 6433cf855c21cb3449780facabd31d85, type: 2}
