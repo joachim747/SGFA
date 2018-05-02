@@ -17,7 +17,7 @@ public class Ability_Destroy : MonoBehaviour {
 	void Update(){
 		if(Input.GetButtonDown("Destroy")){
 			if(collider != null && collider.gameObject.tag == "Box"){
-				Destroy(collider.gameObject);
+				collider.GetComponent<Destroyable>().destroyObject();
 				collider=null;
 			}
 		}
