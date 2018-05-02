@@ -91,6 +91,9 @@ public class LevelManager : MonoBehaviour {
 			if(m_Player[1].m_Instance.GetComponent<PlayerHealth>().getIfDead()==true){
 				StartCoroutine(DeathHandling(m_Player[1]));
 			}
+			if(Input.GetKeyDown("i")){
+				StartCoroutine(handleHint());
+			}
 		}
 	}
 
