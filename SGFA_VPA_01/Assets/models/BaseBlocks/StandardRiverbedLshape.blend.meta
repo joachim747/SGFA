@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 79d29c4a89b724773b89e9018c0b28ae
-timeCreated: 1524666997
+timeCreated: 1525261624
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -8,6 +8,7 @@ ModelImporter:
     100000: //RootNode
     400000: //RootNode
     2100000: Material_001
+    2100002: Material_001__GrassyBase_png
     2300000: //RootNode
     3300000: //RootNode
     4300000: Cube_007

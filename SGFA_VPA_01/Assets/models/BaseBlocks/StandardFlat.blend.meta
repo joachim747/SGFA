@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 9d6b958f308cd48ba9513529810645aa
-timeCreated: 1524666997
+timeCreated: 1525261626
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -8,6 +8,7 @@ ModelImporter:
     100000: //RootNode
     400000: //RootNode
     2100000: Material_001
+    2100002: None__DesertBase_png
     2300000: //RootNode
     3300000: //RootNode
     4300000: Cube_005
