@@ -13,6 +13,7 @@ public class LevelManager : MonoBehaviour {
 	public CameraControl m_CameraControl;
 	public Text m_MessageText;
 	public GameObject hint;
+	public GameObject m_Pause;
 	public GameObject[] m_PlayerPrefab;
 	public HeroManager[] m_Player;
 
@@ -66,7 +67,7 @@ public class LevelManager : MonoBehaviour {
 		m_CameraControl.SetStartPositionAndSize(); 
 
 		yield return m_StartWait;
-		m_MessageText.text = "Reach the zone";
+		m_MessageText.text = "Reach the Zone";
 		
 		yield return m_StartWait;
 	}
@@ -75,6 +76,7 @@ public class LevelManager : MonoBehaviour {
 		EnablePlayerControl();
 		StartCoroutine(handleHint());
 
+		m_Pause.SetActive(true);
 		m_MessageText.text = string.Empty;
 
 		while(check == false){
@@ -88,11 +90,6 @@ public class LevelManager : MonoBehaviour {
 			}
 			if(m_Player[1].m_Instance.GetComponent<PlayerHealth>().getIfDead()==true){
 				StartCoroutine(DeathHandling(m_Player[1]));
-			}
-			if (Input.GetKeyDown(KeyCode.Escape)){
-            	Debug.Log("Back to MainMenu");
-				SceneManager.LoadScene("MainMenu");
-				break;
 			}
 		}
 	}
