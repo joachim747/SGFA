@@ -1739,6 +1739,7 @@ GameObject:
   - component: {fileID: 1114609658}
   - component: {fileID: 1114609657}
   - component: {fileID: 1114609660}
+  - component: {fileID: 1114609661}
   m_Layer: 0
   m_Name: SpikeTree1 (2)
   m_TagString: Untagged
@@ -1816,6 +1817,20 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300010, guid: ac6881ea0d1e347ec88d41ae8f3cce4b, type: 3}
+--- !u!114 &1114609661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1114609656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b958f4a6468bb84faf3f5ce8a7feb66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  power: 0.99
+  scale: 1
+  timescale: 0.26
 --- !u!1 &1129738923
 GameObject:
   m_ObjectHideFlags: 0
@@ -2233,11 +2248,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400010, guid: 4ed6802a6d8618046bc05d64580cb7ae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.53
+      value: 0.63
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 4ed6802a6d8618046bc05d64580cb7ae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.96
+      value: 2.75
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 4ed6802a6d8618046bc05d64580cb7ae, type: 3}
       propertyPath: m_LocalPosition.z
