@@ -11,10 +11,12 @@ public class WaterAnimWaves : MonoBehaviour {
 	private float xOffset;
 	private float yOffset;
 	private MeshFilter mf;
+	private Vector3[] originalVertices;
 
 	// Use this for initialization
 	void Start () {
 		mf = GetComponent<MeshFilter>();
+		originalVertices = mf.mesh.vertices;
 		MakeNoise();
 	}
 	
@@ -30,14 +32,14 @@ public class WaterAnimWaves : MonoBehaviour {
 
 		for (int i = 0; i < vertices.Length; i++)
 		{
-			vertices[i].y = CalculateHeight(vertices[i].x, vertices[i].z) * power;
+				vertices[i].z = originalVertices[i].z + CalculateHeight(vertices[i].x, vertices[i].y) * power;			
 		}
+		mf.mesh.vertices = vertices;
 	}
 
 	float CalculateHeight(float x, float y){
 		float xCord = x * scale * xOffset;
 		float yCord = y * scale * yOffset;
-
 		return Mathf.PerlinNoise(xCord, yCord);
 	}
 }
