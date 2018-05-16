@@ -63,6 +63,7 @@ GameObject:
   - component: {fileID: 135002704074819256}
   - component: {fileID: 114557357389564696}
   - component: {fileID: 114264166153120766}
+  - component: {fileID: 114611251893358558}
   m_Layer: 0
   m_Name: Angel
   m_TagString: Player
@@ -326,6 +327,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_JumpVelocity: 4
+--- !u!114 &114611251893358558
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1712033863726032}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3866cbdd69c5a4964ba744332e221a40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114680960019791302
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -517,7 +529,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1948789194624224}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.100000024, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224934893497022688}
