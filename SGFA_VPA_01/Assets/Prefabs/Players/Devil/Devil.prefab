@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 224033630143451378}
   - component: {fileID: 222111271728535730}
   - component: {fileID: 114126488775722512}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 223928715997452094}
   - component: {fileID: 114853028168315806}
   - component: {fileID: 114003404821590410}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 135870963571186736}
   - component: {fileID: 114368375410908734}
   - component: {fileID: 114344423512076804}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Devil
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 224745174391420948}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 224567079784965370}
   - component: {fileID: 114142937095306962}
   - component: {fileID: 114800812628193316}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: HealthSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 4652306194746330}
   - component: {fileID: 65745145537767286}
   - component: {fileID: 114244505211203976}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RangeOfMotion
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 224131274400795162}
   - component: {fileID: 222841736545786230}
   - component: {fileID: 114404117829865404}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
