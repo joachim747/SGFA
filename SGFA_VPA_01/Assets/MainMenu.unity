@@ -8507,7 +8507,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: c13c2179f7e7b4349b17cd09774d1c1d, type: 3}
-    m_FontSize: 128
+    m_FontSize: 127
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -10896,7 +10896,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: bbf59dd6233f3453aa380ca0469b9758, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2a377c1a6e72e49a5bca0bbcef9fa39d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11320,8 +11320,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 53609318}
   m_HandleRect: {fileID: 53609317}
   m_Direction: 0
-  m_Value: 0.00000035354495
-  m_Size: 0.57886857
+  m_Value: 0.000000401052
+  m_Size: 0.60926193
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -12627,7 +12627,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -949.2009, y: 361.2}
-  m_SizeDelta: {x: 3279.5, y: 0}
+  m_SizeDelta: {x: 3115.9, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1772728092
 MonoBehaviour:
