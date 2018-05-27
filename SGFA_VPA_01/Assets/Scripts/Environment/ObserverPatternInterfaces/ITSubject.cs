@@ -4,7 +4,7 @@ using UnityEngine;
 
 public interface ITSubject {
 
-	List<ITObserver> observers{ get; }
+	List<ITObserver> observers{ get; set; }
 
 	void notify();
 

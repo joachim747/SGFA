@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Bridge_Observer : MonoBehaviour, ITObserver {
 
+
+	public int subjectCount;
+	public ITSubject[] watchedSubjects;
 	Animator animator;
 	public bool risen;
 
@@ -19,6 +22,9 @@ public class Bridge_Observer : MonoBehaviour, ITObserver {
 
     // Use this for initialization
     void Start () {
+		foreach (ITSubject subject in watchedSubjects){
+			subject.addObserver(this);
+		}
 		animator = transform.GetComponent<Animator>();
 	}
 	
