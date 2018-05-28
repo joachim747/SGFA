@@ -12,7 +12,7 @@ download() {
   curl -o `basename "$package"` "$url"
 }
 
-install() {
+installUnity() {
   package=$1
   download "$package"
 
@@ -23,7 +23,11 @@ install() {
 # See $BASE_URL/$HASH/unity-$VERSION-$PLATFORM.ini for complete list
 # of available packages, where PLATFORM is `osx` or `win`
 
-install "MacEditorInstaller/Unity-$VERSION.pkg"
-install "MacEditorTargetInstaller/UnitySetup-Windows-Support-for-Editor-$VERSION.pkg"
-install "MacEditorTargetInstaller/UnitySetup-Mac-Support-for-Editor-$VERSION.pkg"
-install "MacEditorTargetInstaller/UnitySetup-Linux-Support-for-Editor-$VERSION.pkg"
+installUnity "MacEditorInstaller/Unity-$VERSION.pkg"
+installUnity "MacEditorTargetInstaller/UnitySetup-Windows-Support-for-Editor-$VERSION.pkg"
+installUnity "MacEditorTargetInstaller/UnitySetup-Mac-Support-for-Editor-$VERSION.pkg"
+installUnity "MacEditorTargetInstaller/UnitySetup-Linux-Support-for-Editor-$VERSION.pkg"
+
+wget -O Blender.dmg https://download.blender.org/release/Blender2.79/blender-2.79b-macOS-10.6.dmg
+sudo hdiutil attach Blender.dmg
+cp /Volumes/Blender/Blender /Applications/
