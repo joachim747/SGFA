@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Modificator_Jump : MonoBehaviour {
 
-	public float m_FallMultiplier=2.5f;
-	public float m_LowJumpMultiplier=2f;
+	public float m_FallMultiplier=1f;
+	public float m_LowJumpMultiplier=1f;
 
 	Rigidbody player;
 

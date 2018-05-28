@@ -9,13 +9,17 @@ public class LevelManager : MonoBehaviour {
 	public int m_LvlNumber;
 	public float m_StartDelay = 3f;
 	public float m_EndDelay = 3f;
+	public float m_HintDelay = 5f;
 	public CameraControl m_CameraControl;
 	public Text m_MessageText;
+	public GameObject hint;
+	public GameObject m_Pause;
 	public GameObject[] m_PlayerPrefab;
 	public HeroManager[] m_Player;
 
 	private WaitForSeconds m_StartWait;
 	private WaitForSeconds m_EndWait;
+	private WaitForSeconds m_HintWait;
 	private bool check = false;
 	private string str_msg = "";
 	private int m_AmountOfDeaths=0;
@@ -24,6 +28,7 @@ public class LevelManager : MonoBehaviour {
 	private void Start () {
 		m_StartWait = new WaitForSeconds(m_StartDelay);
 		m_EndWait = new WaitForSeconds(m_EndDelay);
+		m_HintWait = new WaitForSeconds(m_HintDelay);
 
 		SpawnAllPlayers();
 		SetCameraTargets();
@@ -69,7 +74,9 @@ public class LevelManager : MonoBehaviour {
 
 	private IEnumerator LevelPlaying(){
 		EnablePlayerControl();
+		StartCoroutine(handleHint());
 
+		m_Pause.SetActive(true);
 		m_MessageText.text = string.Empty;
 
 		while(check == false){
@@ -84,10 +91,8 @@ public class LevelManager : MonoBehaviour {
 			if(m_Player[1].m_Instance.GetComponent<PlayerHealth>().getIfDead()==true){
 				StartCoroutine(DeathHandling(m_Player[1]));
 			}
-			if (Input.GetKeyDown(KeyCode.Escape)){
-            	Debug.Log("Back to MainMenu");
-				SceneManager.LoadScene("MainMenu");
-				break;
+			if(Input.GetKeyDown("i")){
+				StartCoroutine(handleHint());
 			}
 		}
 	}
@@ -114,6 +119,15 @@ public class LevelManager : MonoBehaviour {
 				SceneManager.LoadScene("Story_2");
 				break;
 			case 2:
+				SceneManager.LoadScene("Story_3");
+				break;
+			case 3:
+				SceneManager.LoadScene("Story_4");
+				break;
+			case 4:
+				SceneManager.LoadScene("MainMenu");
+				break;
+			case 5:
 				SceneManager.LoadScene("MainMenu");
 				break;
 			default:
@@ -123,6 +137,11 @@ public class LevelManager : MonoBehaviour {
 	}
 
 
+	private IEnumerator handleHint(){
+		hint.SetActive(true);
+		yield return m_HintWait;
+		hint.SetActive(false);
+	}
 
 	private void ResetPlayers()
     {
