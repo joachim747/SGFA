@@ -30,4 +30,4 @@ installUnity "MacEditorTargetInstaller/UnitySetup-Linux-Support-for-Editor-$VERS
 
 wget -O Blender.dmg https://download.blender.org/release/Blender2.79/blender-2.79b-macOS-10.6.dmg
 sudo hdiutil attach Blender.dmg
-cp /Volumes/Blender/Blender /Applications/
+cp -R /Volumes/Blender/Blender /Applications/
