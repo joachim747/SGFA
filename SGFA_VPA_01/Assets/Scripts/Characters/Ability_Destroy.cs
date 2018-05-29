@@ -4,21 +4,23 @@ using UnityEngine;
 
 public class Ability_Destroy : MonoBehaviour {
 
-	private Collider collider;
+	private List<Collider> collider = new List<Collider>();
 
 	void OnTriggerEnter(Collider col){
-		collider = col;
+		collider.Add(col);
 	}
 
-	void OnTriggerExit(){
-		collider = null;
+	void OnTriggerExit(Collider col){
+		collider.Remove(col);
 	}
 
 	void Update(){
-		if(Input.GetButtonDown("Destroy")){
-			if(collider != null && collider.gameObject.tag == "Box"){
-				collider.GetComponent<Destroyable>().destroyObject();
-				collider=null;
+		if(Input.GetButtonDown("Destroy") && collider.Count > 0){
+			foreach (Collider go in collider) {
+				if(go.gameObject.tag=="Box"){
+					go.GetComponent<Destroyable>().destroyObject();
+					collider.Remove(go);
+				}
 			}
 		}
 	}
