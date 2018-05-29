@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerHealth : MonoBehaviour {
+public class AIHealth : MonoBehaviour {
 
 	public float m_StartingHealth = 50f;
 	public Slider m_Slider;
@@ -38,10 +38,6 @@ public class PlayerHealth : MonoBehaviour {
 
 	private void OnDeath(){
 		//effects & sounds? menues? 
-		gameObject.Destroy();
-	}
-
-	public bool getIfDead(){
-		return m_Dead;
+		Destroy(gameObject);
 	}
 }
