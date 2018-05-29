@@ -24,7 +24,7 @@ public class Ability_Destroy : MonoBehaviour {
 				if(go.gameObject.tag=="Enemy"){
 					go.GetComponent<AIHealth>().TakeDamage(15f);
 
-					if(go.GetComponent<AIHealth>().GetHealth() <= 0){
+					if(go.GetComponent<AIHealth>().GetHealth() <= 0f){
 						collider.Remove(go);
 					}
 				}

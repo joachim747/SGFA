@@ -20,7 +20,7 @@ public class AIHealth : MonoBehaviour {
 		SetHealthUI();
 	}
 
-	public void GetHealth(){
+	public float GetHealth(){
 		return m_CurrentHealth;
 	}
 
