@@ -15,11 +15,18 @@ public class Ability_Destroy : MonoBehaviour {
 	}
 
 	void Update(){
-		if(Input.GetButtonDown("Destroy") && collider.Count > 0){
+		if(Input.GetButtonDown("Attack") && collider.Count > 0){
 			foreach (Collider go in collider) {
 				if(go.gameObject.tag=="Box"){
 					go.GetComponent<Destroyable>().destroyObject();
 					collider.Remove(go);
+				}
+				if(go.gameObject.tag=="Enemy"){
+					go.GetComponent<AIHealth>().TakeDamage(15f);
+
+					if(go.GetComponent<AIHealth>().GetHealth() <= 0){
+						collider.Remove(go);
+					}
 				}
 			}
 		}

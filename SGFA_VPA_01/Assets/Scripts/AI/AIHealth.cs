@@ -20,6 +20,10 @@ public class AIHealth : MonoBehaviour {
 		SetHealthUI();
 	}
 
+	public void GetHealth(){
+		return m_CurrentHealth;
+	}
+
 	public void TakeDamage(float amount){
 		m_CurrentHealth -= amount;
 
@@ -38,6 +42,6 @@ public class AIHealth : MonoBehaviour {
 
 	private void OnDeath(){
 		//effects & sounds? menues? 
-		Destroy(gameObject);
+		gameObject.SetActive(false);
 	}
 }
