@@ -14,20 +14,27 @@ public class PlayerHealth : MonoBehaviour {
 
 	private float m_CurrentHealth;
 	private bool m_Dead;
+	private bool healable = true;
 
-	public void DecreaseOverTime(float dmgTick){
-		StartCoroutine(DmgXSecond(dmgTick));
+	public void IncreaseHealth(float additionalHealth){
+		if(healable){
+			StartCoroutine(addHealth(additionalHealth));
+		}
 	}
 
-	IEnumerator DmgXSecond(float dmgTick){
-		int ticks = 0;
-		int totalTicks = 4;
-
-		while(ticks < totalTicks){
-			ticks++;
-			TakeDamage(dmgTick);
-			yield return new WaitForSecondsRealtime(1);
+	private IEnumerator addHealth(float amount){
+		healable = false;
+		while (amount > 0){ 
+			if (m_CurrentHealth < 100){ 
+				m_CurrentHealth += 1; 
+				SetHealthUI();
+				amount -= 1;
+				yield return 5;
+			} else { 
+				yield return null;
+			}
 		}
+		healable = true;
 	}
 
 	private void OnEnable(){
