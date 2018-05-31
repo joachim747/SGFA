@@ -169,4 +169,8 @@ public class LevelManager : MonoBehaviour {
         }
     }
 
+	public HeroManager[] getHeroes(){
+		return m_Player;
+	}
+
 }
