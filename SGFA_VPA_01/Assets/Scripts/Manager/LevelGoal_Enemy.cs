@@ -24,17 +24,8 @@ public class LevelGoal_Enemy : MonoBehaviour {
 			}
 		}
 
-		switch(enemies.Count){
-			case 0:
-				handleMessage("All Enemies defeated. Zone is now reachable.");
-				m_Zone.SetActive(true);
-				break;
-			case 1:
-				handleMessage("One Enemy left");
-				break;
-			case 2:
-				handleMessage("Two Enemies left");
-				break;
+		if(enemies.Count == 0){
+			m_Zone.SetActive(true);
 		}
 	}
 
