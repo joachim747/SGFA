@@ -4,25 +4,43 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class AIMovement : MonoBehaviour {
-	public float m_lookRange = 5f;
-	public Transform target;
+	private List<Transform> targets = new List<Transform>();
+	private Transform m_Target, m_Enemy;
 	NavMeshAgent agent;
 
 	void Start(){
-		target = GameObject.Find("Angel(Clone)").transform;
-		agent = GetComponent<NavMeshAgent>();
+		agent = gameObject.transform.parent.gameObject.GetComponent<NavMeshAgent>();
+		m_Enemy = gameObject.transform.parent.gameObject.transform;
 	}
 
-	void Update () {
-		float distance = Vector3.Distance(target.position, transform.position);
-
-		if(distance <= m_lookRange){
-			agent.SetDestination(target.position);
+	void OnTriggerEnter(Collider col){
+		if(col.gameObject.tag == "Player"){
+			targets.Add(col.gameObject.transform);
 		}
 	}
 
-	void OnDrawGizmosSelected(){
-		Gizmos.color = Color.red;
-		Gizmos.DrawWireSphere(transform.position, m_lookRange);
+	void OnTriggerExit(Collider col){
+		if(col.gameObject.tag == "Player"){
+			targets.Remove(col.gameObject.transform);
+		}
+	}
+
+	void OnTriggerStay(){
+		if(targets.Count > 0){
+			m_Target = targets[0];
+			agent.SetDestination(m_Target.position);
+
+			float distance = Vector3.Distance(m_Target.position, m_Enemy.position);
+
+			if(distance <= agent.stoppingDistance){
+				FaceTarget();
+			}
+		}
+	}
+
+	private void FaceTarget(){
+		Vector3 direction = (m_Target.position - m_Enemy.position).normalized;
+		Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+		m_Enemy.rotation = Quaternion.Slerp(m_Enemy.rotation, lookRotation, Time.deltaTime * 5f);
 	}
 }
