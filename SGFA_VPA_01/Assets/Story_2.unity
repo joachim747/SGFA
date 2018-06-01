@@ -5292,7 +5292,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_VoxelSize: 0.06666667
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 23800000, guid: 5b20692e0530f4c95be2198b8f406402, type: 2}
 --- !u!4 &804761796
@@ -5390,7 +5390,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level 2
+  m_Text: '- Level 2 -
+
+
+    Reach the Zone'
 --- !u!222 &812281355
 CanvasRenderer:
   m_ObjectHideFlags: 0
