@@ -23,6 +23,10 @@ public class AIAttack : MonoBehaviour {
 		if(targets.Count > 0){
 			foreach (GameObject go in targets) {
 				go.GetComponent<PlayerHealth>().TakeDamage(m_DamageToPlayer);
+
+				if(go.GetComponent<PlayerHealth>().getIfDead()){
+					targets.Remove(go);
+				}
 			}
 		}
 	}
