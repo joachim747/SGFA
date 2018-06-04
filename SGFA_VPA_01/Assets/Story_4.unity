@@ -2696,12 +2696,12 @@ Prefab:
     - target: {fileID: 224877126342129678, guid: d7d18f708484e4744bb44f6bed293d44,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224877126342129678, guid: d7d18f708484e4744bb44f6bed293d44,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4587939759118316, guid: d7d18f708484e4744bb44f6bed293d44, type: 2}
       propertyPath: m_LocalScale.y
@@ -3396,8 +3396,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AgentTypeID: 0
-  m_StartPoint: {x: 0, y: 0, z: -5.52}
-  m_EndPoint: {x: 0, y: 0, z: 2.5}
+  m_StartPoint: {x: 0, y: 0, z: -5.82}
+  m_EndPoint: {x: 0, y: 0, z: 2.99}
   m_Width: 3.2716637
   m_CostModifier: -1
   m_Bidirectional: 1
@@ -3952,19 +3952,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1819176261671778, guid: d7d18f708484e4744bb44f6bed293d44, type: 2}
+      propertyPath: m_Name
+      value: Enemy (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 224877126342129678, guid: d7d18f708484e4744bb44f6bed293d44,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224877126342129678, guid: d7d18f708484e4744bb44f6bed293d44,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1819176261671778, guid: d7d18f708484e4744bb44f6bed293d44, type: 2}
-      propertyPath: m_Name
-      value: Enemy (1)
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7d18f708484e4744bb44f6bed293d44, type: 2}
@@ -7653,12 +7653,12 @@ Prefab:
     - target: {fileID: 224877126342129678, guid: d7d18f708484e4744bb44f6bed293d44,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224877126342129678, guid: d7d18f708484e4744bb44f6bed293d44,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1819176261671778, guid: d7d18f708484e4744bb44f6bed293d44, type: 2}
       propertyPath: m_Name

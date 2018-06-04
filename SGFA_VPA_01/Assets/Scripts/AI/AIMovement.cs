@@ -6,6 +6,8 @@ using UnityEngine.AI;
 public class AIMovement : MonoBehaviour {
 	private List<Transform> targets = new List<Transform>();
 	private Transform m_Target, m_Enemy;
+	private List<GameObject> players = new List<GameObject>();
+	private GameObject m_Player;
 	NavMeshAgent agent;
 
 	void Start(){
@@ -16,24 +18,34 @@ public class AIMovement : MonoBehaviour {
 	void OnTriggerEnter(Collider col){
 		if(col.gameObject.tag == "Player"){
 			targets.Add(col.gameObject.transform);
+			players.Add(col.gameObject);
 		}
 	}
 
 	void OnTriggerExit(Collider col){
 		if(col.gameObject.tag == "Player"){
 			targets.Remove(col.gameObject.transform);
+			players.Remove(col.gameObject);
 		}
 	}
 
 	void OnTriggerStay(){
 		if(targets.Count > 0){
 			m_Target = targets[0];
+			m_Player = players[0];
 			agent.SetDestination(m_Target.position);
 
 			float distance = Vector3.Distance(m_Target.position, m_Enemy.position);
 
 			if(distance <= agent.stoppingDistance){
 				FaceTarget();
+			}
+
+			if(m_Player.GetComponent<PlayerHealth>().getIfDead()){
+				targets.Remove(m_Target);
+				players.Remove(m_Player);
+				m_Player = null;
+				m_Target = null;
 			}
 		}
 	}
