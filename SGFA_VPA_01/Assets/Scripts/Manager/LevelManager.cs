@@ -39,9 +39,11 @@ public class LevelManager : MonoBehaviour {
 	private void SpawnAllPlayers(){
 		for(int i=0; i < m_Player.Length;i++){
 			m_Player[i].m_Instance = Instantiate(m_PlayerPrefab[i], m_Player[i].m_Spawnpoint.position, m_Player[i].m_Spawnpoint.rotation) as GameObject;
-			m_Player[i].m_PlayerNumber = i+1;
+			m_Player[i].m_PlayerNumber = m_Player[i].m_Instance.GetComponent<PlayerSettings>().GetPlayerNumber();
 			m_Player[i].Setup();
 		}
+
+		Debug.Log(m_Player.Length);
 	}
 
 	private void SetCameraTargets(){
@@ -78,15 +80,25 @@ public class LevelManager : MonoBehaviour {
 
 		while(check == false){
 			yield return null;
-			if((m_Player[0].m_Instance.GetComponent<PlayerSettings>().getTargetState() == true) && (m_Player[1].m_Instance.GetComponent<PlayerSettings>().getTargetState() == true)){
-				check = true;
-				str_msg = "Level finished";
-			}
-			if(m_Player[0].m_Instance.GetComponent<PlayerHealth>().getIfDead() == true){
-				StartCoroutine(DeathHandling(m_Player[0]));
-			}
-			if(m_Player[1].m_Instance.GetComponent<PlayerHealth>().getIfDead()==true){
-				StartCoroutine(DeathHandling(m_Player[1]));
+			if(m_Player.Length > 1){
+				if((m_Player[0].m_Instance.GetComponent<PlayerSettings>().getTargetState() == true) && (m_Player[1].m_Instance.GetComponent<PlayerSettings>().getTargetState() == true)){
+					check = true;
+					str_msg = "Level finished";
+				} 
+				if(m_Player[0].m_Instance.GetComponent<PlayerHealth>().getIfDead() == true){
+					StartCoroutine(DeathHandling(m_Player[0]));
+				}
+				if(m_Player[1].m_Instance.GetComponent<PlayerHealth>().getIfDead()==true){
+					StartCoroutine(DeathHandling(m_Player[1]));
+				}
+			} else {
+				if((m_Player[0].m_Instance.GetComponent<PlayerSettings>().getTargetState() == true)){
+					check = true;
+					str_msg = "Level finished";
+				}
+				if(m_Player[0].m_Instance.GetComponent<PlayerHealth>().getIfDead() == true){
+					StartCoroutine(DeathHandling(m_Player[0]));
+				}
 			}
 			if(Input.GetKeyDown("i")){
 				StartCoroutine(handleHint());
@@ -112,6 +124,12 @@ public class LevelManager : MonoBehaviour {
 		yield return m_EndWait;
 
 		switch (m_LvlNumber) {
+			case 98:
+				SceneManager.LoadScene("Tutorial_Angel");
+				break;
+			case 99:
+				SceneManager.LoadScene("Story_1");
+				break;
 			case 1: 
 				SceneManager.LoadScene("Story_2");
 				break;

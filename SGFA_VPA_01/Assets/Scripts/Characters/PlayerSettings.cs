@@ -14,4 +14,12 @@ public class PlayerSettings : MonoBehaviour {
 		return inZone;
 	}
 
+	public int GetPlayerNumber(){
+		if(gameObject.transform.Find("PlayerType").tag == "Angel"){
+			return 1;
+		} else {
+			return 2;
+		}
+	}
+
 }
