@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Angel
   - Devil
+  - Human_Subpart
   layers:
   - Default
   - TransparentFX
