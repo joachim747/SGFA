@@ -167,8 +167,6 @@ public class LevelManager : MonoBehaviour {
 			m_StoryCounter.text = i.ToString();
 			yield return new WaitForSeconds(1f);
 		}
-
-		m_Story.SetActive(false);
 	}
 
 
