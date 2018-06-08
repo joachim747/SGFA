@@ -16,6 +16,10 @@ public class LevelManager : MonoBehaviour {
 	public GameObject m_Pause;
 	public GameObject[] m_PlayerPrefab;
 	public HeroManager[] m_Player;
+	public bool hasStory = false;
+	public int m_DurationStory = 15;
+	public GameObject m_Story;
+	public Text m_StoryCounter;
 
 	private WaitForSeconds m_StartWait;
 	private WaitForSeconds m_EndWait;
@@ -123,6 +127,10 @@ public class LevelManager : MonoBehaviour {
 
 		yield return m_EndWait;
 
+		if(hasStory){
+			yield return StartCoroutine(ShowStory());
+		}
+
 		switch (m_LvlNumber) {
 			case 98:
 				SceneManager.LoadScene("Tutorial_Angel");
@@ -149,6 +157,18 @@ public class LevelManager : MonoBehaviour {
 				SceneManager.LoadScene("MainMenu");
 				break;
 		}
+	}
+
+	private IEnumerator ShowStory(){
+		m_Story.SetActive(true);
+		//pause audio
+
+		for(int i=m_DurationStory; i>0; i--){
+			m_StoryCounter.text = i.ToString();
+			yield return new WaitForSeconds(1f);
+		}
+
+		m_Story.SetActive(false);
 	}
 
 
