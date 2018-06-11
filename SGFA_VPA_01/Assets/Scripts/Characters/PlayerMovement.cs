@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour 
 {
 
-	public int m_PlayerNumber = 1; //used for controls (which character)
+	public int m_PlayerNumber; //used for controls (which character)
 	public float m_Speed = 12f;
 	public float m_TurnSpeed = 180f;
 	//public AudioSource m_MovementAudio;

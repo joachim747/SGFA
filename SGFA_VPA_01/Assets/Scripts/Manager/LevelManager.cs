@@ -16,6 +16,10 @@ public class LevelManager : MonoBehaviour {
 	public GameObject m_Pause;
 	public GameObject[] m_PlayerPrefab;
 	public HeroManager[] m_Player;
+	public bool hasStory = false;
+	public int m_DurationStory = 15;
+	public GameObject m_Story;
+	public Text m_StoryCounter;
 
 	private WaitForSeconds m_StartWait;
 	private WaitForSeconds m_EndWait;
@@ -39,9 +43,11 @@ public class LevelManager : MonoBehaviour {
 	private void SpawnAllPlayers(){
 		for(int i=0; i < m_Player.Length;i++){
 			m_Player[i].m_Instance = Instantiate(m_PlayerPrefab[i], m_Player[i].m_Spawnpoint.position, m_Player[i].m_Spawnpoint.rotation) as GameObject;
-			m_Player[i].m_PlayerNumber = i+1;
+			m_Player[i].m_PlayerNumber = m_Player[i].m_Instance.GetComponent<PlayerSettings>().GetPlayerNumber();
 			m_Player[i].Setup();
 		}
+
+		Debug.Log(m_Player.Length);
 	}
 
 	private void SetCameraTargets(){
@@ -67,9 +73,6 @@ public class LevelManager : MonoBehaviour {
 		m_CameraControl.SetStartPositionAndSize(); 
 
 		yield return m_StartWait;
-		m_MessageText.text = "Reach the Zone";
-		
-		yield return m_StartWait;
 	}
 
 	private IEnumerator LevelPlaying(){
@@ -81,15 +84,25 @@ public class LevelManager : MonoBehaviour {
 
 		while(check == false){
 			yield return null;
-			if((m_Player[0].m_Instance.GetComponent<PlayerSettings>().getTargetState() == true) && (m_Player[1].m_Instance.GetComponent<PlayerSettings>().getTargetState() == true)){
-				check = true;
-				str_msg = "Level finished";
-			}
-			if(m_Player[0].m_Instance.GetComponent<PlayerHealth>().getIfDead() == true){
-				StartCoroutine(DeathHandling(m_Player[0]));
-			}
-			if(m_Player[1].m_Instance.GetComponent<PlayerHealth>().getIfDead()==true){
-				StartCoroutine(DeathHandling(m_Player[1]));
+			if(m_Player.Length > 1){
+				if((m_Player[0].m_Instance.GetComponent<PlayerSettings>().getTargetState() == true) && (m_Player[1].m_Instance.GetComponent<PlayerSettings>().getTargetState() == true)){
+					check = true;
+					str_msg = "Level finished";
+				} 
+				if(m_Player[0].m_Instance.GetComponent<PlayerHealth>().getIfDead() == true){
+					StartCoroutine(DeathHandling(m_Player[0]));
+				}
+				if(m_Player[1].m_Instance.GetComponent<PlayerHealth>().getIfDead()==true){
+					StartCoroutine(DeathHandling(m_Player[1]));
+				}
+			} else {
+				if((m_Player[0].m_Instance.GetComponent<PlayerSettings>().getTargetState() == true)){
+					check = true;
+					str_msg = "Level finished";
+				}
+				if(m_Player[0].m_Instance.GetComponent<PlayerHealth>().getIfDead() == true){
+					StartCoroutine(DeathHandling(m_Player[0]));
+				}
 			}
 			if(Input.GetKeyDown("i")){
 				StartCoroutine(handleHint());
@@ -114,7 +127,17 @@ public class LevelManager : MonoBehaviour {
 
 		yield return m_EndWait;
 
+		if(hasStory){
+			yield return StartCoroutine(ShowStory());
+		}
+
 		switch (m_LvlNumber) {
+			case 98:
+				SceneManager.LoadScene("Tutorial_Angel");
+				break;
+			case 99:
+				SceneManager.LoadScene("Story_1");
+				break;
 			case 1: 
 				SceneManager.LoadScene("Story_2");
 				break;
@@ -122,14 +145,27 @@ public class LevelManager : MonoBehaviour {
 				SceneManager.LoadScene("Story_3");
 				break;
 			case 3:
-				SceneManager.LoadScene("MainMenu");
+				SceneManager.LoadScene("Story_4");
 				break;
 			case 4:
+				SceneManager.LoadScene("Story_5");
+				break;
+			case 5:
 				SceneManager.LoadScene("MainMenu");
 				break;
 			default:
 				SceneManager.LoadScene("MainMenu");
 				break;
+		}
+	}
+
+	private IEnumerator ShowStory(){
+		m_Story.SetActive(true);
+		//pause audio
+
+		for(int i=m_DurationStory; i>0; i--){
+			m_StoryCounter.text = i.ToString();
+			yield return new WaitForSeconds(1f);
 		}
 	}
 
@@ -165,5 +201,9 @@ public class LevelManager : MonoBehaviour {
             m_Player[i].DisableControl();
         }
     }
+
+	public HeroManager[] getHeroes(){
+		return m_Player;
+	}
 
 }

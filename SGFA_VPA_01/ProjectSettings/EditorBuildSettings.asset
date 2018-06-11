@@ -23,3 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Story_5.unity
     guid: 071ac121933cf4eedbc987ee3ca8d63e
+  - enabled: 1
+    path: Assets/Tutorial_Devil.unity
+    guid: 99f21d506988e4212ba6ae2014116e34
+  - enabled: 1
+    path: Assets/Tutorial_Angel.unity
+    guid: fbacfdffad09a49bb88fa599fa879991

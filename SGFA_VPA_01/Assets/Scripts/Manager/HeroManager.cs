@@ -16,7 +16,6 @@ public class HeroManager
 	private PlayerMovement m_Movement;
 	private GameObject m_CanvasGameObject;
 
-
 	public void Setup(){
 		m_Movement = m_Instance.GetComponent<PlayerMovement>();
 		m_CanvasGameObject = m_Instance.GetComponentInChildren<Canvas>().gameObject;
