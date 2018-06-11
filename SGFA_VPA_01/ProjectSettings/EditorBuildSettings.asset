@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Intro_Video.unity
     guid: 2d764781592894fc5a83b6616a541b8f
   - enabled: 1
+    path: Assets/Language_Selection.unity
+    guid: c8aee5ac6c74b4bb08e7981564950b1e
+  - enabled: 1
     path: Assets/MainMenu.unity
     guid: 6d32331c3c4504f92a466722cef0afb6
   - enabled: 1
