@@ -368,7 +368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Seconds: 63
-  m_Scene: LanguageSelection
+  m_Scene: MainMenu
 --- !u!1 &1519114879
 GameObject:
   m_ObjectHideFlags: 0
