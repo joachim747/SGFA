@@ -7,6 +7,7 @@ public class Ability_Jump : MonoBehaviour {
 	[Range(1,10)] public float m_JumpVelocity = 4;
     public ParticleSystem jumpParticles;
     private Animator anim;
+    private float distanceToGround = 0.2f;
 
     private void Start()
     {
@@ -14,11 +15,15 @@ public class Ability_Jump : MonoBehaviour {
     }
 
     void Update(){
-		if(Input.GetButtonDown("Jump")){
+		if(Input.GetButtonDown("Jump") && isGrounded()){
             anim.SetTrigger("Jump");
             StartCoroutine(Jump());
 		}
 	}
+
+    private bool isGrounded(){
+        return Physics.Raycast(transform.position, -Vector3.up, distanceToGround);
+    }
 
     IEnumerator Jump()
     {  
