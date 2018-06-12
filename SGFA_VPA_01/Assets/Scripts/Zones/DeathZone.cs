@@ -17,12 +17,18 @@ public class DeathZone : MonoBehaviour {
 	void OnTriggerEnter(Collider col){
 		if(col.gameObject.tag == "Player"){
 			m_PlayersOutOfZone.Remove(col.gameObject);
+			if(col.gameObject.transform.Find("PlayerType").tag == "Angel"){
+				col.gameObject.transform.Find("RangeOfHealing").GetComponent<Ability_Heal>().enabled = true;
+			}
 		}
 	}
 
 	void OnTriggerExit(Collider col){
 		if(col.gameObject.tag == "Player"){
 			m_PlayersOutOfZone.Add(col.gameObject);
+			if(col.gameObject.transform.Find("PlayerType").tag == "Angel"){
+				col.gameObject.transform.Find("RangeOfHealing").GetComponent<Ability_Heal>().enabled = false;
+			}
 		}
 	}
 }

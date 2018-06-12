@@ -9,6 +9,7 @@ TagManager:
   - Angel
   - Devil
   - Human_Subpart
+  - Ground
   layers:
   - Default
   - TransparentFX
