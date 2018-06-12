@@ -797,7 +797,7 @@ Animator:
   m_GameObject: {fileID: 1092398644466596}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 7ec0b24120ce43542b103558b8cc1efd, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7b94df201c9d5154dbd66869b7631209, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -932,6 +932,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_JumpVelocity: 4
+  jumpParticles: {fileID: 198604970130963966, guid: f5211475c8fdfa242a94fc086ea2f40c,
+    type: 2}
 --- !u!114 &114611251893358558
 MonoBehaviour:
   m_ObjectHideFlags: 1
