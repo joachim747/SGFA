@@ -9,7 +9,7 @@ public class Hitbox : MonoBehaviour {
     void OnTriggerEnter(Collider col)
     {
         collider.Add(col);
-        //Debug.Log(col.name + " entered");
+        Debug.Log(col.name + " entered");
     }
 
     void OnTriggerExit(Collider col)
