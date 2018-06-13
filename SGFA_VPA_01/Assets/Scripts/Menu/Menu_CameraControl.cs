@@ -14,6 +14,7 @@ public class Menu_CameraControl : MonoBehaviour {
 		GameObject.Find("Page_Quit").SetActive(false);
 		GameObject.Find("Page_Level").SetActive(false);
 		GameObject.Find("Page_About").SetActive(false);
+		GameObject.Find("Page_Arcade").SetActive(false);
 	}
 	
 	// Update is called once per frame
