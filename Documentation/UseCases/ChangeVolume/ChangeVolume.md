@@ -41,7 +41,7 @@
 
 ![UseCaseDiagram][UC]
 
-[UC]: UCOpenMenu.png "UseCaseDiagram Change Volume"
+[UC]: UCChangeVolume.png "UseCaseDiagram Change Volume"
 
 
 Mock-Up:
