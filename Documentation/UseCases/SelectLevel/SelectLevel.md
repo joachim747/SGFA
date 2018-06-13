@@ -39,7 +39,7 @@
 
 ![useCase Diagram][UC]
 
-[UC]: UCSelectLecel.png "UseCaseDiagram Select Level"
+[UC]: UCSelectLevel.png "UseCaseDiagram Select Level"
 
 
 Mock-Up:
