@@ -10,11 +10,25 @@ ModelImporter:
     100004: EyeRight
     100006: Tail
     100008: Trident
+    100010: Armature
+    100012: Bone
+    100014: Bone_003
+    100016: BoneToTheBack
+    100018: Devil
+    100020: Tailbone1
+    100022: TridentBone
     400000: //RootNode
     400002: EyeLeft
     400004: EyeRight
     400006: Tail
     400008: Trident
+    400010: Armature
+    400012: Bone
+    400014: Bone_003
+    400016: BoneToTheBack
+    400018: Devil
+    400020: Tailbone1
+    400022: TridentBone
     2100000: Material_003
     2100002: Dunkelrot
     2100004: Material_002
@@ -35,7 +49,14 @@ ModelImporter:
     4300006: EyeLeft
     4300008: Tail
     7400000: Default Take
+    7400002: Attack
+    7400004: Jump
     9500000: //RootNode
+    13700000: Devil
+    13700002: EyeLeft
+    13700004: EyeRight
+    13700006: Tail
+    13700008: Trident
   externalObjects: {}
   materials:
     importMaterials: 1
