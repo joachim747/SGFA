@@ -39,12 +39,12 @@
 
 ![useCase Diagram][UC]
 
-[UC]: SelectLecelUC.png "UseCaseDiagram Select Level"
+[UC]: UCSelectLecel.png "UseCaseDiagram Select Level"
 
 
 Mock-Up:
 
-![alt text][MainMen]
+![select level][MainMen]
 
 [MainMen]: SelectLevel.png "Select Level Mock-Up"
 
