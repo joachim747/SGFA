@@ -248,7 +248,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4652306194746330}
   - component: {fileID: 65745145537767286}
-  - component: {fileID: 114674493735179014}
   - component: {fileID: 114794235726475954}
   m_Layer: 8
   m_Name: RangeOfMotion
@@ -766,18 +765,6 @@ MonoBehaviour:
   m_PlayerNumber: 2
   m_Speed: 2
   m_TurnSpeed: 180
---- !u!114 &114674493735179014
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1615050033584148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 160acaa27ca2b0a4797b5b5db4858372, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collider: []
 --- !u!114 &114794235726475954
 MonoBehaviour:
   m_ObjectHideFlags: 1

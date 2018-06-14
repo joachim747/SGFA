@@ -10,7 +10,6 @@ public class Ability_Destroy : MonoBehaviour {
     void OnTriggerEnter(Collider col)
     {
         collider.Add(col);
-        Debug.Log(col.name + " entered");
     }
 
     void OnTriggerExit(Collider col)
@@ -36,8 +35,9 @@ public class Ability_Destroy : MonoBehaviour {
     {
        
         yield return new WaitForSeconds(0.3f);
-        foreach (Collider go in collider)
+        for (int i=1; i< collider.Count; i++)
         {
+            var go = collider[i];
             if (go.gameObject.tag == "Box")
             {
                 go.GetComponent<Destroyable>().destroyObject();

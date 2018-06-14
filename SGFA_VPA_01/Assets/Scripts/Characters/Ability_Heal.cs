@@ -25,7 +25,6 @@ public class Ability_Heal : MonoBehaviour {
 			heroes.Remove(col.gameObject);
 		}
 		if(col.gameObject.tag == "Human_Subpart"){
-			Debug.Log("Human detected");
 			humans.Remove(col.transform.parent.gameObject);
 		}
 	}
