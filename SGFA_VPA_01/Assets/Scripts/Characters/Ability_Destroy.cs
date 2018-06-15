@@ -40,8 +40,8 @@ public class Ability_Destroy : MonoBehaviour {
             var go = collider[i];
             if (go.gameObject.tag == "Box")
             {
-                go.GetComponent<Destroyable>().destroyObject();
                 collider.Remove(go);
+                go.GetComponent<Destroyable>().destroyObject();
             }
             if (go.gameObject.tag == "Enemy")
             {
