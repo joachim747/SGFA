@@ -98,6 +98,33 @@ After that, the game starts and the users can instantly play.
 
 [MUC]: https://github.com/joachim747/SGFA/blob/master/Documentation/UseCases/Move/Move.md "UseCaseDiagram Move"
 
+[Click here to acess the useCase Diagram for Gaining an Ability][GAUC]
+
+[GAUC]: https://github.com/joachim747/SGFA/blob/master/Documentation/UseCases/GainAbility/GainAbility.md "UseCaseDiagram Gain Ability"
+
+[Click here to acess the useCase Diagram for Changing the Volume][CVUC]
+
+[CVUC]: https://github.com/joachim747/SGFA/blob/master/Documentation/UseCases/ChangeVolume/ChangeVolume.md "UseCaseDiagram Change Volume"
+
+[Click here to acess the useCase Diagram for Selecting a level][SLUC]
+
+[SLUC]: https://github.com/joachim747/SGFA/blob/master/Documentation/UseCases/SelectLevel/SelectLevel.md "UseCaseDiagram Select Level"
+
+[Click here to acess the useCase Diagram for Freeing a Soul][FSUC]
+
+[FSUC]: https://github.com/joachim747/SGFA/blob/master/Documentation/UseCases/FreeSoul/FreeSoul.md "UseCaseDiagram Free Soul"
+
+[Click here to acess the useCase Diagram for Opening the Menu][OMUC]
+
+[OMUC]: https://github.com/joachim747/SGFA/blob/master/Documentation/UseCases/OpenMenu/OpenMenu.md "UseCaseDiagram Open Menu"
+
+[Click here to acess the useCase Diagram for Starting the Game][FGUC]
+
+[FGUC]: https://github.com/joachim747/SGFA/blob/master/Documentation/UseCases/StartGame/StartGame.md "UseCaseDiagram StartGame"
+
+[Click here to acess the useCase Diagram for Ending the Game][EGUC]
+
+[EGUC]: https://github.com/joachim747/SGFA/blob/master/Documentation/UseCases/EndGame/EndGame.md "UseCaseDiagram End Game"
 
 [Click here to acess the useCase Diagram for Starting the Game][SGUC]
 
