@@ -18,8 +18,7 @@ public class LevelGoal_Enemy : MonoBehaviour {
 	}
 
 	void Update(){
-		for(int i=1; i<enemies.Count; i++) {
-			var go = enemies[i];
+		foreach (GameObject go in enemies) {
 			if(!go.active){
 				enemies.Remove(go);
 			}
