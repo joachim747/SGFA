@@ -5,16 +5,16 @@ using UnityEngine;
 public class Ability_Destroy : MonoBehaviour {
 
     private Animator anim;
-    private List<Collider> collider = new List<Collider>();
+    private List<Collider> collider_list = new List<Collider>();
 
     void OnTriggerEnter(Collider col)
     {
-        collider.Add(col);
+        collider_list.Add(col);
     }
 
     void OnTriggerExit(Collider col)
     {
-        collider.Remove(col);
+        collider_list.Remove(col);
     }
 
     private void Start()
@@ -23,7 +23,7 @@ public class Ability_Destroy : MonoBehaviour {
     }
 
 	void Update(){
-		if(Input.GetButtonDown("Attack") && collider.Count > 0){
+		if(Input.GetButtonDown("Attack") && collider_list.Count > 0){
 
             anim.SetTrigger("Attack");
             StartCoroutine(Attack());
@@ -35,12 +35,12 @@ public class Ability_Destroy : MonoBehaviour {
     {
        
         yield return new WaitForSeconds(0.3f);
-        for (int i = 1; i < collider.Count; i++)
+        for (int i = 1; i < collider_list.Count; i++)
         {
-            var go = collider[i];
+            var go = collider_list[i];
             if (go.gameObject.tag == "Box")
             {
-                collider.Remove(go);
+                collider_list.Remove(go);
                 go.GetComponent<Destroyable>().destroyObject();
             }
             if (go.gameObject.tag == "Enemy")
@@ -49,7 +49,7 @@ public class Ability_Destroy : MonoBehaviour {
 
                 if (go.GetComponent<AIHealth>().GetHealth() <= 0f)
                 {
-                    collider.Remove(go);
+                    collider_list.Remove(go);
                 }
             }
         }
