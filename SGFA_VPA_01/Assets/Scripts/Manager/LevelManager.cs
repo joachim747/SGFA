@@ -46,8 +46,6 @@ public class LevelManager : MonoBehaviour {
 			m_Player[i].m_PlayerNumber = m_Player[i].m_Instance.GetComponent<PlayerSettings>().GetPlayerNumber();
 			m_Player[i].Setup();
 		}
-
-		Debug.Log(m_Player.Length);
 	}
 
 	private void SetCameraTargets(){
