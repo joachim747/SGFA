@@ -3,6 +3,15 @@
 
 ## Version 1.1
 
+
+# Revision Histoy
+
+| Date          | Version  | Description       | Author |
+| ------------- |----------| ------------------|--------|
+| 20.10.2017    | 1.0      | Initialization    |Jochem :apple:|
+| 02.11.2017    | 1.1      | converted to MD  |Sauer	:sunglasses:|
+
+
 # Table of Contents
 
 - [Introduction](#introduction)
@@ -33,15 +42,6 @@
   * [APPLICABLE STANDARDS](#applicable-standards)
 - [Supporting Information](#supporting-information)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
-
-# Revision Histoy
-
-| Date          | Version  | Description       | Author |
-| ------------- |----------| ------------------|--------|
-| 20.10.2017    | 1.0      | Initialization    |Jochem :apple:|
-| 02.11.2017    | 1.1      | converted to MD  |Sauer	:sunglasses:|
 
 # Introduction
 
@@ -73,7 +73,10 @@ This document is designed for internal use only and will outline the development
 |---------|----|
 |Blog | https://sgfaweb.wordpress.com |
 |GitHub | https://github.com/joachim747/SGFA |
-|Use Case Diagram ||
+|Use Case Diagram |[UseCaseDiagram][UC]|
+|SAD|[SAD][SAD]|
+
+[SAD]:https://github.com/joachim747/SGFA/blob/master/Documentation/SRS/SAD.md
 
 ## OVERVIEW
 
@@ -118,9 +121,9 @@ After that, the game starts and the users can instantly play.
 
 [OMUC]: https://github.com/joachim747/SGFA/blob/master/Documentation/UseCases/OpenMenu/OpenMenu.md "UseCaseDiagram Open Menu"
 
-[Click here to acess the useCase Diagram for Starting the Game][FGUC]
+[Click here to acess the useCase Diagram for Finishing a Level][FLUC]
 
-[FGUC]: https://github.com/joachim747/SGFA/blob/master/Documentation/UseCases/StartGame/StartGame.md "UseCaseDiagram StartGame"
+[FLUC]: https://github.com/joachim747/SGFA/blob/master/Documentation/UseCases/StartGame/FinishLevel.md "UseCaseDiagram FinishLevel"
 
 [Click here to acess the useCase Diagram for Ending the Game][EGUC]
 

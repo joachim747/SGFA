@@ -56,14 +56,30 @@ Dev: Development
 |Documents|
 |----------|
 |[SRS][SRS]|
+|[Testplan][Test]|
 |[Blog][blo]|
-|[UseCaseMove][UCM]|
-|[UseCaseStartGame][UCS]|
+|[UseCaseMove][MUC]|
+|[UseCaseGainAbility][GAUC]|
+|[UseCaseChangeVolume][CVUC]|
+|[UseCaseSelectLevel][SLUC]|
+|[UseCaseFreeSoul][FSUC]|
+|[UseCaseOpenMenu][OMUC]|
+|[UseCaseFinishLevel][FLUC]|
+|[UseCaseEndGame][EGUC]|
+|[UseCaseStartGame][SGUC]|
 
 [SRS]:https://github.com/joachim747/SGFA/blob/master/Documentation/SRS/SRS.md
+[Test]: https://github.com/joachim747/SGFA/blob/master/Documentation/Testplan/Testplan.md "Testplan"
 [blo]:sgfaweb.wordpress.com
-[UCM]:https://github.com/joachim747/SGFA/blob/master/Documentation/UseCases/Move/Move.md
-[UCS]:https://github.com/joachim747/SGFA/blob/master/Documentation/UseCases/StartGame/StartGame.md
+[MUC]: https://github.com/joachim747/SGFA/blob/master/Documentation/UseCases/Move/Move.md "UseCaseDiagram Move"
+[GAUC]: https://github.com/joachim747/SGFA/blob/master/Documentation/UseCases/GainAbility/GainAbility.md "UseCaseDiagram Gain Ability"
+[CVUC]: https://github.com/joachim747/SGFA/blob/master/Documentation/UseCases/ChangeVolume/ChangeVolume.md "UseCaseDiagram Change Volume"
+[SLUC]: https://github.com/joachim747/SGFA/blob/master/Documentation/UseCases/SelectLevel/SelectLevel.md "UseCaseDiagram Select Level"
+[FSUC]: https://github.com/joachim747/SGFA/blob/master/Documentation/UseCases/FreeSoul/FreeSoul.md "UseCaseDiagram Free Soul"
+[OMUC]: https://github.com/joachim747/SGFA/blob/master/Documentation/UseCases/OpenMenu/OpenMenu.md "UseCaseDiagram Open Menu"
+[FLUC]: https://github.com/joachim747/SGFA/blob/master/Documentation/UseCases/StartGame/FinishLevel.md "UseCaseDiagram FinishLevel"
+[EGUC]: https://github.com/joachim747/SGFA/blob/master/Documentation/UseCases/EndGame/EndGame.md "UseCaseDiagram End Game"
+[SGUC]:https://github.com/joachim747/SGFA/blob/master/Documentation/UseCases/StartGame/StartGame.md
 
 ### Overview
 
