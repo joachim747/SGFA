@@ -28,7 +28,7 @@ public class Ability_Jump : MonoBehaviour {
     IEnumerator Jump()
     {  
         yield return new WaitForSeconds(0.5f);
-        Instantiate(jumpParticles, transform.position, Quaternion.identity);
+        Instantiate(jumpParticles, transform.position, Quaternion.Euler(90, 0, 0));
         GetComponent<Rigidbody>().velocity = Vector3.up * m_JumpVelocity;
     }
 }

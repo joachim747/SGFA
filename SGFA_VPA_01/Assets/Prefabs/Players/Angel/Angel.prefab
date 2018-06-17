@@ -402,7 +402,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1712033863726032}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.2493305, y: 2.8829138, z: -7.446491}
+  m_LocalPosition: {x: -6.5301023, y: 3.2586513, z: -9.384578}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 224556561339094286}
@@ -832,6 +832,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 582751cb268944e64ae5b2a46443f85e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healParticles: {fileID: 198671460914085928, guid: ad8dc9cf2d88cfe40b478e36fd338cc0,
+    type: 2}
   heroes: []
 --- !u!114 &114264166153120766
 MonoBehaviour:

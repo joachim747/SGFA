@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class Ability_Heal : MonoBehaviour {
 
-	public List<GameObject> heroes = new List<GameObject>();
+    private Animator anim;
+    public ParticleSystem healParticles;
+    public List<GameObject> heroes = new List<GameObject>();
 	private List<GameObject> humans = new List<GameObject>();
 
 	void Start() {
 		heroes.Add(gameObject.transform.parent.gameObject);
-	}
+        anim = transform.parent.GetComponentInChildren<Animator>();
+    }
 
 	void OnTriggerEnter(Collider col){
 		if(col.gameObject.tag == "Player"){
@@ -31,7 +34,9 @@ public class Ability_Heal : MonoBehaviour {
 
 	void Update () {
 		if(Input.GetButtonDown("Heal")){
-			foreach (GameObject go in heroes) {
+            anim.SetTrigger("Heal");
+            Instantiate(healParticles, transform.position, Quaternion.Euler(90, 0, 0));
+            foreach (GameObject go in heroes) {
 				go.GetComponent<PlayerHealth>().IncreaseHealth(50f);
 			}
 			foreach (GameObject go in humans){
