@@ -177,7 +177,9 @@ n/a
 ### 5.2 TESTING TECHNIQUES AND TYPES
 #### 5.2.1 DATA AND DATABASE INTEGRITY TESTING
 	 	 n/a
-#### 5.2.2 FUNCTION TESTING
+#### 5.2.2 EDIT MODE TESTING
+
+Edit Mode testing is comparable to the standard Unit testing a programmer is used to. We implemented them to test our code.
 
 ||Description|
 |----|-----------|
@@ -225,6 +227,10 @@ n/a
 |Required Tools|Unity, TravisCI|
 |Success Criteria|Successful Installation on named platforms with the possibility to run the application without crash|
 |Special Considerations| - |
+
+#### 5.2.13 PLAY MODE TESTING
+
+Play mode tests are a more complex way of testing in Unity. They simulate the game actually playing and make it possible to check the changes in the scene frame by frame. Because of errors in our Unity versions we were not able to write play mode tests. Not even the standard Tests of the Unity Support website were running so we stopped developing play mode tests in this scope.
 
 ## 6. Entry and Exit Criteria
 ### 6.1 TEST PLAN
