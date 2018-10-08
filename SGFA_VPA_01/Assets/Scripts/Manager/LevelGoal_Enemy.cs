@@ -20,7 +20,7 @@ public class LevelGoal_Enemy : MonoBehaviour {
 	void Update(){
 		for (int i=1; i<enemies.Count; i++) {
 			var go = enemies[i];
-			if(!go.active){
+			if(!go.activeSelf){
 				enemies.Remove(go);
 			}
 		}
