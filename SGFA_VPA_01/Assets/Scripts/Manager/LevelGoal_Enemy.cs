@@ -15,10 +15,13 @@ public class LevelGoal_Enemy : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		m_Zone.SetActive(false);
+		print("Started");
+		print(enemies);
 	}
 
 	void Update(){
-		for (int i=1; i<enemies.Count; i++) {
+		for(int i=1; i<enemies.Count; i++){
+			print("For Schleife");
 			var go = enemies[i];
 			if(!go.activeSelf){
 				enemies.Remove(go);
